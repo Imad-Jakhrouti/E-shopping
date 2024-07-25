@@ -17,39 +17,45 @@
 </head>
 <body>
 
-<header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ma Boutique</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-                <div class="speed-menu">
-                    <a href=""><i data-feather="user"></i></a>
-                    <a href=""><i data-feather="shopping-cart"></i></a>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ma Boutique</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <div class="speed-menu">
+                        <a href=""><i data-feather="user"></i></a>
+                        <a href=""><i data-feather="shopping-cart"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<main>
+    <main>
         {% block body %}{% endblock %}
-</main>
-    </body>
+        <!-- FOOTER -->
+        <footer class="container">
+            <p>&copy; 2024 Ma Boutique by Imad. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/global.js"></script>
+</body>
 </html>
