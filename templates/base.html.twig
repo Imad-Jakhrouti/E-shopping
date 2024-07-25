@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ma Boutique</title>
+    <title>{%block title%} Ma Boutique {%endblock%}</title>
     <meta name="description" content="Boutique de Imad">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/assets/css/carousel.css" rel="stylesheet">
-    <link href="/assets/css/custom.css" rel="stylesheet">
+    <link href="{{asset('assets/css/carousel.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/custom.css')}}" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
@@ -55,7 +55,7 @@
             <p>&copy; 2024 Ma Boutique by Imad. All rights reserved.</p>
         </footer>
     </main>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/global.js"></script>
+    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/js/global.js')}}"></script>
 </body>
 </html>
