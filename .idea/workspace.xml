@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Fix some">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -179,6 +180,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/imad/Desktop/Projects/symfony/E-shopping&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -215,6 +217,11 @@
       <workItem from="1721987302627" duration="166000" />
       <workItem from="1722015416152" duration="1907000" />
       <workItem from="1722017356424" duration="43000" />
+      <workItem from="1722017734771" duration="466000" />
+      <workItem from="1722018228239" duration="415000" />
+      <workItem from="1722018647459" duration="17000" />
+      <workItem from="1722018705077" duration="1056000" />
+      <workItem from="1722019781063" duration="1286000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -224,7 +231,71 @@
       <option name="project" value="LOCAL" />
       <updated>1722016345174</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="configure database connection&#10;&#10;- Added the database connection details to the .env file">
+      <option name="closed" value="true" />
+      <created>1722018505344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722018505344</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created a new migration file &quot;Version20240726184847&quot;">
+      <option name="closed" value="true" />
+      <created>1722019907815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722019907815</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722020701724</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020701724</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722020731108</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020731108</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722020801026</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020801026</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722020811642</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020811642</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722020855221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020855221</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722020876855</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722020876855</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +303,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix some" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix some" />
+    <MESSAGE value="configure database connection&#10;&#10;- Added the database connection details to the .env file" />
+    <MESSAGE value="Created a new migration file &quot;Version20240726184847&quot;" />
+    <MESSAGE value="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database" />
   </component>
 </project>
