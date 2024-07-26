@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="change the server-version of mysql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -221,7 +220,8 @@
       <workItem from="1722018228239" duration="415000" />
       <workItem from="1722018647459" duration="17000" />
       <workItem from="1722018705077" duration="1056000" />
-      <workItem from="1722019781063" duration="1286000" />
+      <workItem from="1722019781063" duration="2078000" />
+      <workItem from="1722021887818" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -295,7 +295,39 @@
       <option name="project" value="LOCAL" />
       <updated>1722020876855</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
+      <option name="closed" value="true" />
+      <created>1722021106517</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021106517</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed">
+      <option name="closed" value="true" />
+      <created>1722021176120</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021176120</updated>
+    </task>
+    <task id="LOCAL-00012" summary="change the server-version of myslql">
+      <option name="closed" value="true" />
+      <created>1722021275323</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021275323</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change the server-version of mysql">
+      <option name="closed" value="true" />
+      <created>1722021295054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021295054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +338,9 @@
     <MESSAGE value="configure database connection&#10;&#10;- Added the database connection details to the .env file" />
     <MESSAGE value="Created a new migration file &quot;Version20240726184847&quot;" />
     <MESSAGE value="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database" />
+    <MESSAGE value="Fixed" />
+    <MESSAGE value="change the server-version of myslql" />
+    <MESSAGE value="change the server-version of mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the server-version of mysql" />
   </component>
 </project>
