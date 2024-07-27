@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterUserType.php" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class">
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +232,7 @@
       <workItem from="1722038449772" duration="280000" />
       <workItem from="1722077963584" duration="13000" />
       <workItem from="1722105665863" duration="407000" />
-      <workItem from="1722106130612" duration="3277000" />
+      <workItem from="1722106130612" duration="3448000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -387,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722107136617</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class">
+      <option name="closed" value="true" />
+      <created>1722110304569</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722110304569</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +413,7 @@
     <MESSAGE value="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController" />
     <MESSAGE value="Displayed the register form&#10;- Created the form with the RegisterController using the `createForm(RegisterUserType::class)` method&#10;- Passed the created form to the view as `registerForm`&#10;- Allows displaying the user registration form in the `register/index.html.twig` template" />
     <MESSAGE value="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme" />
+    <MESSAGE value="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class" />
   </component>
 </project>
