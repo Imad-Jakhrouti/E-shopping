@@ -84,6 +84,13 @@ class RegisterUserType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
+            'constraints' => [
+                new UniqueEntity([
+                    'entityClass' => User::class, // c'est oblige puisque la formulaire est deja lie avec l'entite User
+                    'fields' => 'email',
+                    'message' => 'Cette adresse email est déjà utilisée.',
+                ])
+            ],
             'data_class' => User::class,
         ]);
     }
