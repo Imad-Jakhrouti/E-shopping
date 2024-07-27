@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="change the server-version of mysql">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +222,13 @@
       <workItem from="1722018705077" duration="1056000" />
       <workItem from="1722019781063" duration="2078000" />
       <workItem from="1722021887818" duration="8000" />
+      <workItem from="1722021904276" duration="307000" />
+      <workItem from="1722022283788" duration="71000" />
+      <workItem from="1722022454518" duration="111000" />
+      <workItem from="1722022606598" duration="46000" />
+      <workItem from="1722022653692" duration="168000" />
+      <workItem from="1722038449772" duration="280000" />
+      <workItem from="1722077963584" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -327,7 +334,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722021295054</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization">
+      <option name="closed" value="true" />
+      <created>1722021980246</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722021980246</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization">
+      <option name="closed" value="true" />
+      <created>1722022034698</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722022034698</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +364,7 @@
     <MESSAGE value="Fixed" />
     <MESSAGE value="change the server-version of myslql" />
     <MESSAGE value="change the server-version of mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the server-version of mysql" />
+    <MESSAGE value="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization" />
   </component>
 </project>
