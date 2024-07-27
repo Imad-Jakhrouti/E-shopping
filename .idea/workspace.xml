@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController">
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +233,7 @@
       <workItem from="1722038449772" duration="280000" />
       <workItem from="1722077963584" duration="13000" />
       <workItem from="1722105665863" duration="407000" />
-      <workItem from="1722106130612" duration="17000" />
+      <workItem from="1722106130612" duration="420000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -362,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722105834883</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController">
+      <option name="closed" value="true" />
+      <created>1722106364079</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722106364079</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +387,7 @@
     <MESSAGE value="change the server-version of mysql" />
     <MESSAGE value="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization" />
     <MESSAGE value="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command" />
+    <MESSAGE value="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController" />
   </component>
 </project>
