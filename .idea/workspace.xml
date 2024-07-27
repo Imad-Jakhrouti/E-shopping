@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/RegisterUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterUserType.php" afterDir="false" />
     </list>
@@ -233,7 +233,7 @@
       <workItem from="1722038449772" duration="280000" />
       <workItem from="1722077963584" duration="13000" />
       <workItem from="1722105665863" duration="407000" />
-      <workItem from="1722106130612" duration="4160000" />
+      <workItem from="1722106130612" duration="6776000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -403,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722110720985</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity">
+      <option name="closed" value="true" />
+      <created>1722111342746</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722111342746</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +432,7 @@
     <MESSAGE value="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme" />
     <MESSAGE value="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class" />
     <MESSAGE value="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database" />
+    <MESSAGE value="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity" />
   </component>
 </project>
