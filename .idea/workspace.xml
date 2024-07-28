@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add custom website icon&#10;- Added a new Twig block named 'icon' to include a custom icon for the website">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +231,7 @@
       <workItem from="1722077963584" duration="13000" />
       <workItem from="1722105665863" duration="407000" />
       <workItem from="1722106130612" duration="8186000" />
-      <workItem from="1722199531307" duration="909000" />
+      <workItem from="1722199531307" duration="1228000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -427,7 +425,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722116101084</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Create LoginController&#10;&#10;- Generated a new controller using the Symfony make:controller command">
+      <option name="closed" value="true" />
+      <created>1722206035291</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722206035291</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route">
+      <option name="closed" value="true" />
+      <created>1722206160230</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722206160230</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,6 +466,8 @@
     <MESSAGE value="Add length constraints to user registration fields&#10;- Implement length constraints on the 'plainPassword' field using the Length constraint&#10;- Set the minimum length to 8 characters and the maximum length to 50 characters for the password&#10;- Implement length constraints on the 'firstName' and 'lastName' fields using the Length constraint&#10;- Set the minimum length to 2 characters and the maximum length to 50 characters for the first and last name&#10;- This ensures that the user's password and name fields meet the minimum security and validation requirements&#10;- The hashed password will still be stored in the 'password' property of the User entity" />
     <MESSAGE value="Add unique email constraint to user registration form&#10;- Implement the UniqueEntity constraint on the 'email' field of the user registration form&#10;- This constraint ensures that the email address entered by the user is unique in the database&#10;- If a user tries to register with an email address that is already in use, the form will display an error message&#10;- The 'entityClass' option is set to the User entity class, as the form is already bound to this entity&#10;- The 'fields' option specifies that the constraint should be applied to the 'email' field&#10;- The 'message' option sets the custom error message to be displayed if the email is not unique&#10;- This change reinforces the data integrity of the user accounts by preventing duplicate email addresses" />
     <MESSAGE value="Add custom website icon&#10;- Added a new Twig block named 'icon' to include a custom icon for the website" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add custom website icon&#10;- Added a new Twig block named 'icon' to include a custom icon for the website" />
+    <MESSAGE value="Create LoginController&#10;&#10;- Generated a new controller using the Symfony make:controller command" />
+    <MESSAGE value="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
   </component>
 </project>
