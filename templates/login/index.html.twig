@@ -16,7 +16,7 @@
             {#            <label class="mt-3" for="password">Mot de pass:</label>#}
             <input class="form-control mt-1 my_input col-lg-6" type="password" id="password" name="_password" required placeholder="Mot de passe">
 
-{#            <input type="hidden" name="_target_path" value="/account">#}
+            <input type="hidden" name="_target_path" value="{{ path('app_account') }}">
 
             <button type="submit" class="my_button btn mt-2">Me connecter</button>
         </form>
