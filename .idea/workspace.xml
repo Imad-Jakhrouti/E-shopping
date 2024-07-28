@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Implement login form in template&#10;&#10;- Added the login form HTML markup in the login/index.html.twig template&#10;- Included the necessary input fields for username and password&#10;- Displayed the authentication error message if present&#10;- Used the app_login route for the form action" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +231,7 @@
       <workItem from="1722077963584" duration="13000" />
       <workItem from="1722105665863" duration="407000" />
       <workItem from="1722106130612" duration="8186000" />
-      <workItem from="1722199531307" duration="1228000" />
+      <workItem from="1722199531307" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -441,7 +441,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722206160230</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route">
+      <option name="closed" value="true" />
+      <created>1722206330865</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1722206330865</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route">
+      <option name="closed" value="true" />
+      <created>1722206337501</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1722206337501</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Implement login form in template&#10;&#10;- Added the login form HTML markup in the login/index.html.twig template&#10;- Included the necessary input fields for username and password&#10;- Displayed the authentication error message if present&#10;- Used the app_login route for the form action">
+      <option name="closed" value="true" />
+      <created>1722206451519</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722206451519</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +491,9 @@
     <MESSAGE value="Add unique email constraint to user registration form&#10;- Implement the UniqueEntity constraint on the 'email' field of the user registration form&#10;- This constraint ensures that the email address entered by the user is unique in the database&#10;- If a user tries to register with an email address that is already in use, the form will display an error message&#10;- The 'entityClass' option is set to the User entity class, as the form is already bound to this entity&#10;- The 'fields' option specifies that the constraint should be applied to the 'email' field&#10;- The 'message' option sets the custom error message to be displayed if the email is not unique&#10;- This change reinforces the data integrity of the user accounts by preventing duplicate email addresses" />
     <MESSAGE value="Add custom website icon&#10;- Added a new Twig block named 'icon' to include a custom icon for the website" />
     <MESSAGE value="Create LoginController&#10;&#10;- Generated a new controller using the Symfony make:controller command" />
+    <MESSAGE value="In the LoginController, retrieved the last authentication error and the last username used&#10;- Passed these values to the login/index.html.twig template" />
     <MESSAGE value="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
+    <MESSAGE value="Implement login form in template&#10;&#10;- Added the login form HTML markup in the login/index.html.twig template&#10;- Included the necessary input fields for username and password&#10;- Displayed the authentication error message if present&#10;- Used the app_login route for the form action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement login form in template&#10;&#10;- Added the login form HTML markup in the login/index.html.twig template&#10;- Included the necessary input fields for username and password&#10;- Displayed the authentication error message if present&#10;- Used the app_login route for the form action" />
   </component>
 </project>
