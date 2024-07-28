@@ -15,7 +15,7 @@ security:
             security: false
         main:
             logout:
-                path: /logout
+                path: /deconnexion
             form_login:
                 # "app_login" is the name of the route created previously
                 login_path: app_login
