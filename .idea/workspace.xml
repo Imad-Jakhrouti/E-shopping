@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label">
-      <change beforePath="$PROJECT_DIR$/src/Form/ModifyPasswordUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ModifyPasswordUserType.php" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements">
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +238,7 @@
       <workItem from="1722106130612" duration="8186000" />
       <workItem from="1722199531307" duration="2833000" />
       <workItem from="1722276280609" duration="2885000" />
-      <workItem from="1722279248997" duration="2619000" />
+      <workItem from="1722279248997" duration="3129000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -576,14 +576,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722284453495</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements">
+      <option name="closed" value="true" />
+      <created>1722284626291</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1722284626291</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Displayed the register form&#10;- Created the form with the RegisterController using the `createForm(RegisterUserType::class)` method&#10;- Passed the created form to the view as `registerForm`&#10;- Allows displaying the user registration form in the `register/index.html.twig` template" />
     <MESSAGE value="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme" />
     <MESSAGE value="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class" />
     <MESSAGE value="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database" />
@@ -608,6 +615,7 @@
     <MESSAGE value="create modify password route" />
     <MESSAGE value="add the modifyPassword view and pass the modifyPasswordForm to the view" />
     <MESSAGE value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
+    <MESSAGE value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
   </component>
 </project>
