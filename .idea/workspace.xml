@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add user account navigation menu&#10;&#10;- Created a new Twig template file named &quot;_menu.html.twig&quot; to hold the user account navigation menu&#10;- Added the menu items: &quot;Mes commandes&quot;, &quot;Mes adresses&quot;, &quot;Modifier mot de passe&quot;, and &quot;Me deconnecter&quot;">
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add user account link with conditional display&#10;&#10;- Added conditional logic to display the user's first name and account link if the user is logged in&#10;- If the user is not logged in, display a generic user icon linked to the login page&#10;- Leverages Symfony's app.user object to check if a user is authenticated&#10;- Uses Twig's path function to generate the URLs for the account and login pages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterUserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +236,7 @@
       <workItem from="1722105665863" duration="407000" />
       <workItem from="1722106130612" duration="8186000" />
       <workItem from="1722199531307" duration="2833000" />
-      <workItem from="1722276280609" duration="1441000" />
+      <workItem from="1722276280609" duration="2097000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -532,14 +534,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722277507753</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add user account link with conditional display&#10;&#10;- Added conditional logic to display the user's first name and account link if the user is logged in&#10;- If the user is not logged in, display a generic user icon linked to the login page&#10;- Leverages Symfony's app.user object to check if a user is authenticated&#10;- Uses Twig's path function to generate the URLs for the account and login pages">
+      <option name="closed" value="true" />
+      <created>1722277922548</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1722277922548</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change the server-version of myslql" />
     <MESSAGE value="change the server-version of mysql" />
     <MESSAGE value="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization" />
     <MESSAGE value="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command" />
@@ -564,6 +573,7 @@
     <MESSAGE value=" Restrict access to member area with security configuration&#10;&#10;- Added an 'access_control' configuration in the security firewall&#10;- Restricted access to the '/compte' path to users with the 'ROLE_USER' role&#10;- This ensures that only authenticated users with the 'ROLE_USER' role can access the member area pages" />
     <MESSAGE value=" Redirect users to member area after login&#10;&#10;- Added a hidden input field with the name '_target_path' and the value set to the path of the member area page ('app_account')&#10;- This ensures that after a successful login, the user is redirected to the member area page ('app_account') instead of the default redirect location&#10;- Improves the user experience by directly taking the user to the member area after authentication" />
     <MESSAGE value="Add user account navigation menu&#10;&#10;- Created a new Twig template file named &quot;_menu.html.twig&quot; to hold the user account navigation menu&#10;- Added the menu items: &quot;Mes commandes&quot;, &quot;Mes adresses&quot;, &quot;Modifier mot de passe&quot;, and &quot;Me deconnecter&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user account navigation menu&#10;&#10;- Created a new Twig template file named &quot;_menu.html.twig&quot; to hold the user account navigation menu&#10;- Added the menu items: &quot;Mes commandes&quot;, &quot;Mes adresses&quot;, &quot;Modifier mot de passe&quot;, and &quot;Me deconnecter&quot;" />
+    <MESSAGE value="Add user account link with conditional display&#10;&#10;- Added conditional logic to display the user's first name and account link if the user is logged in&#10;- If the user is not logged in, display a generic user icon linked to the login page&#10;- Leverages Symfony's app.user object to check if a user is authenticated&#10;- Uses Twig's path function to generate the URLs for the account and login pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user account link with conditional display&#10;&#10;- Added conditional logic to display the user's first name and account link if the user is logged in&#10;- If the user is not logged in, display a generic user icon linked to the login page&#10;- Leverages Symfony's app.user object to check if a user is authenticated&#10;- Uses Twig's path function to generate the URLs for the account and login pages" />
   </component>
 </project>

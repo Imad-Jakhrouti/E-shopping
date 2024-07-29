@@ -19,65 +19,81 @@ class RegisterUserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('email',EmailType::class,[
-                'label' => 'Email',
-                'attr' => [
-                    'placeholder' => 'Imadjakhrouti@gmail.com',
-                ],
+            ->add('email',EmailType::class , [
+//                'label' => 'Email',
+                'label_attr' => ['class' => 'd-none'],
+                'attr'=> [
+                    'placeholder' => 'Email',
+                    'class' => 'my_input'
+                ]
             ])
+
             ->add('plainPassword', RepeatedType::class, [
                 'type' => PasswordType::class,
+                'constraints' => [
+                    new Length([
+                        'min' => 8,
+                        'max' => 50,
+                    ])
+                ],
                 'first_options'  => [
-                    'label' => 'Mot de passe',
-                    'attr' =>[
-                      'placeholder' => 'Taper votre Mot de passe',
-                    ],
-                    'constraints' => [
-                        new Length([
-                            'min' => 8,
-                            'max' => 50,
-                        ])
-                    ],
+//                    'label' => 'Mot de passe',
+                    'label_attr' => ['class' => 'd-none'],
                     'hash_property_path' => 'password',
+                    'attr' => [
+                        'placeholder' => 'Mot de passe',
+                        'class' => 'my_input'
+                    ]
+
                 ],
                 'second_options' => [
-                    'label' => 'Confirmation mot de passe',
-                    'attr' =>[
-                        'placeholder' => 'Taper votre Mot de passe',
-                    ],
+//                    'label' => 'Confirmer mot de passe',
+                    'label_attr' => ['class' => 'd-none'],
+                    'attr' => [
+                        'placeholder' => 'Confirmer de mot de passe',
+                        'class' => 'my_input'
+                    ]
+
                 ],
                 'mapped' => false,
             ])
+            ->add('firstname', TextType::class , [
+//                'label' => 'Nom',
+                'label_attr' => ['class' => 'd-none'],
+                'attr' => [
+                    'placeholder' => 'Nom',
+                    'class' => 'my_input'
+                ],
+                'constraints' => [
+                    new Length([
+                        'min' => 3,
+                        'max' => 50,
+                    ])
+                ]
 
-            ->add('firstname',TextType::class,[
-                'label' => 'Prénom',
+            ])
+            ->add('lastname', TextType::class , [
+//                'label' => 'prenom',
+                'label_attr' => ['class' => 'd-none'],
                 'attr' => [
-                    'placeholder' => 'Imad',
+                    'placeholder' => 'Prénom ',
+                    'class' => 'my_input'
                 ],
                 'constraints' => [
                     new Length([
-                        'min' => 2,
+                        'min' => 3,
                         'max' => 50,
                     ])
                 ]
             ])
-            ->add('lastname',TextType::class,[
-                'label' => 'Nom',
+            ->add('Submit',SubmitType::class , [
+                'label' => 'Valider votre formulaire',
                 'attr' => [
-                    'placeholder' => 'Jakhrouti',
-                ],
-                'constraints' => [
-                    new Length([
-                        'min' => 2,
-                        'max' => 50,
-                    ])
+                    'class' => 'my_button btn'
                 ]
             ])
-            ->add('Inscrire', SubmitType::class,[
-                'attr' =>[
-                    'class' => 'btn btn-success'
-                ]
-            ])
+
+
         ;
     }
 
@@ -86,12 +102,13 @@ class RegisterUserType extends AbstractType
         $resolver->setDefaults([
             'constraints' => [
                 new UniqueEntity([
-                    'entityClass' => User::class, // c'est oblige puisque la formulaire est deja lie avec l'entite User
+                    'entityClass' => User::class,
                     'fields' => 'email',
                     'message' => 'Cette adresse email est déjà utilisée.',
                 ])
             ],
             'data_class' => User::class,
+
         ]);
     }
 }

@@ -4,9 +4,13 @@
 
 {% block body %}
 
-    <div class="container my-4">
+    <div class="container form my-5">
         <h1>Inscription</h1>
         {{ form(registerForm) }}
+
+        <br>
+        <p>Vous avez de compte? <a href="{{ path('app_login') }}">Connecter-vous</a></p>
+
     </div>
 
 {% endblock %}
