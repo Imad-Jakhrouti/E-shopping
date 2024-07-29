@@ -8,6 +8,9 @@ use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormError;
+use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Length;
 
@@ -68,6 +71,31 @@ class ModifyPasswordUserType extends AbstractType
                     'class' => 'my_button btn'
                 ]
             ])
+            ->addEventListener(FormEvents::SUBMIT ,function (FormEvent $event) {
+                //recuperer la formullaire
+                $form = $event->getForm();
+
+                //recuperer l'actual mot de pass
+                $actualPassword = $form->get('actualPassword')->getData();
+
+                // recuperer le mot de passe de l'utilisateur connecter
+                $user = $form->getData();
+
+                // recuperer l'objet hasher pour comparer les deux mot de pass
+                $hasher = $form->getConfig()->getOptions()['hasher'];
+
+                // comparer les mot de passe
+                $isValid = $hasher->isPasswordValid(
+                    $user,
+                    $actualPassword
+                );
+
+                if(!$isValid){
+                    $form->get('actualPassword')->addError(new FormError('Mot de passe incorrect'));
+                }
+
+            })
+
 
         ;
     }
@@ -76,6 +104,7 @@ class ModifyPasswordUserType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => User::class,
+            'hasher' => null
         ]);
     }
 }
