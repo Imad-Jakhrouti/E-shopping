@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment=" Improve form layout and styling">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="create modify password route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +174,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2jmKmWQmpDPpLMtgSibMDlQMw0o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -235,6 +239,7 @@
       <workItem from="1722106130612" duration="8186000" />
       <workItem from="1722199531307" duration="2833000" />
       <workItem from="1722276280609" duration="2885000" />
+      <workItem from="1722279248997" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -548,14 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722278593602</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="create modify password route">
+      <option name="closed" value="true" />
+      <created>1722279579652</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722279579652</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization" />
     <MESSAGE value="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command" />
     <MESSAGE value="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController" />
     <MESSAGE value="Displayed the register form&#10;- Created the form with the RegisterController using the `createForm(RegisterUserType::class)` method&#10;- Passed the created form to the view as `registerForm`&#10;- Allows displaying the user registration form in the `register/index.html.twig` template" />
@@ -580,6 +592,7 @@
     <MESSAGE value="Add user account navigation menu&#10;&#10;- Created a new Twig template file named &quot;_menu.html.twig&quot; to hold the user account navigation menu&#10;- Added the menu items: &quot;Mes commandes&quot;, &quot;Mes adresses&quot;, &quot;Modifier mot de passe&quot;, and &quot;Me deconnecter&quot;" />
     <MESSAGE value="Add user account link with conditional display&#10;&#10;- Added conditional logic to display the user's first name and account link if the user is logged in&#10;- If the user is not logged in, display a generic user icon linked to the login page&#10;- Leverages Symfony's app.user object to check if a user is authenticated&#10;- Uses Twig's path function to generate the URLs for the account and login pages" />
     <MESSAGE value=" Improve form layout and styling" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Improve form layout and styling" />
+    <MESSAGE value="create modify password route" />
+    <option name="LAST_COMMIT_MESSAGE" value="create modify password route" />
   </component>
 </project>
