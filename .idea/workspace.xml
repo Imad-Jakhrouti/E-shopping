@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field">
       <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,7 +238,7 @@
       <workItem from="1722106130612" duration="8186000" />
       <workItem from="1722199531307" duration="2833000" />
       <workItem from="1722276280609" duration="2885000" />
-      <workItem from="1722279248997" duration="3129000" />
+      <workItem from="1722279248997" duration="3524000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -584,15 +584,29 @@
       <option name="project" value="LOCAL" />
       <updated>1722284626291</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form">
+      <option name="closed" value="true" />
+      <created>1722285200097</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1722285200097</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field">
+      <option name="closed" value="true" />
+      <created>1722285383670</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1722285383670</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme" />
-    <MESSAGE value="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class" />
     <MESSAGE value="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database" />
     <MESSAGE value="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity" />
     <MESSAGE value="Add length constraints to user registration fields&#10;- Implement length constraints on the 'plainPassword' field using the Length constraint&#10;- Set the minimum length to 8 characters and the maximum length to 50 characters for the password&#10;- Implement length constraints on the 'firstName' and 'lastName' fields using the Length constraint&#10;- Set the minimum length to 2 characters and the maximum length to 50 characters for the first and last name&#10;- This ensures that the user's password and name fields meet the minimum security and validation requirements&#10;- The hashed password will still be stored in the 'password' property of the User entity" />
@@ -616,6 +630,8 @@
     <MESSAGE value="add the modifyPassword view and pass the modifyPasswordForm to the view" />
     <MESSAGE value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
     <MESSAGE value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
+    <MESSAGE value="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form" />
+    <MESSAGE value="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field" />
   </component>
 </project>

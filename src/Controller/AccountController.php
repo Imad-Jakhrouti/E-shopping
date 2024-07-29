@@ -18,14 +18,16 @@ class AccountController extends AbstractController
         return $this->render('account/index.html.twig');
     }
     #[Route('/modifier_mot_de_passe', name: 'app_account_modify_password')]
-    public function modifyPassword(Request $request , UserPasswordHasherInterface $hasher, ): Response
+    public function modifyPassword(Request $request , UserPasswordHasherInterface $hasher, EntityManagerInterface $entityManager): Response
     {
         $user = $this->getUser();
         $form = $this->createForm(ModifyPasswordUserType::class , $user , [
             'hasher' => $hasher,
         ]);
         $form->handleRequest($request);
-
+        if($form->isSubmitted() && $form->isValid()) {
+            $entityManager->flush();
+        }
         return $this->render('account/modifyPassword.html.twig',[
             'modifyPasswordForm' => $form->createView(),
         ]);
