@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field">
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/_menu.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +239,7 @@
       <workItem from="1722106130612" duration="8186000" />
       <workItem from="1722199531307" duration="2833000" />
       <workItem from="1722276280609" duration="2885000" />
-      <workItem from="1722279248997" duration="3524000" />
+      <workItem from="1722279248997" duration="4161000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -600,14 +601,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722285383670</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database">
+      <option name="closed" value="true" />
+      <created>1722285436701</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1722285436701</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database" />
     <MESSAGE value="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity" />
     <MESSAGE value="Add length constraints to user registration fields&#10;- Implement length constraints on the 'plainPassword' field using the Length constraint&#10;- Set the minimum length to 8 characters and the maximum length to 50 characters for the password&#10;- Implement length constraints on the 'firstName' and 'lastName' fields using the Length constraint&#10;- Set the minimum length to 2 characters and the maximum length to 50 characters for the first and last name&#10;- This ensures that the user's password and name fields meet the minimum security and validation requirements&#10;- The hashed password will still be stored in the 'password' property of the User entity" />
     <MESSAGE value="Add unique email constraint to user registration form&#10;- Implement the UniqueEntity constraint on the 'email' field of the user registration form&#10;- This constraint ensures that the email address entered by the user is unique in the database&#10;- If a user tries to register with an email address that is already in use, the form will display an error message&#10;- The 'entityClass' option is set to the User entity class, as the form is already bound to this entity&#10;- The 'fields' option specifies that the constraint should be applied to the 'email' field&#10;- The 'message' option sets the custom error message to be displayed if the email is not unique&#10;- This change reinforces the data integrity of the user accounts by preventing duplicate email addresses" />
@@ -632,6 +640,7 @@
     <MESSAGE value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
     <MESSAGE value="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form" />
     <MESSAGE value="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field" />
+    <MESSAGE value="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database" />
   </component>
 </project>
