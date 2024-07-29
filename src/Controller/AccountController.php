@@ -13,4 +13,11 @@ class AccountController extends AbstractController
     {
         return $this->render('account/index.html.twig');
     }
+    #[Route('/modifier_mot_de_passe', name: 'app_account_modify_password')]
+    public function modifyPassword(): Response
+    {
+        return $this->render('account/index.html.twig');
+    }
+
+
 }
