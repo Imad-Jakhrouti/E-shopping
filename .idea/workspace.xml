@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add the modifyPassword view and pass the modifyPasswordForm to the view">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label">
+      <change beforePath="$PROJECT_DIR$/src/Form/ModifyPasswordUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ModifyPasswordUserType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +238,7 @@
       <workItem from="1722106130612" duration="8186000" />
       <workItem from="1722199531307" duration="2833000" />
       <workItem from="1722276280609" duration="2885000" />
-      <workItem from="1722279248997" duration="2312000" />
+      <workItem from="1722279248997" duration="2619000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -568,14 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722280379237</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label">
+      <option name="closed" value="true" />
+      <created>1722284453495</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1722284453495</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController" />
     <MESSAGE value="Displayed the register form&#10;- Created the form with the RegisterController using the `createForm(RegisterUserType::class)` method&#10;- Passed the created form to the view as `registerForm`&#10;- Allows displaying the user registration form in the `register/index.html.twig` template" />
     <MESSAGE value="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme" />
     <MESSAGE value="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class" />
@@ -600,6 +607,7 @@
     <MESSAGE value=" Improve form layout and styling" />
     <MESSAGE value="create modify password route" />
     <MESSAGE value="add the modifyPassword view and pass the modifyPasswordForm to the view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the modifyPassword view and pass the modifyPasswordForm to the view" />
+    <MESSAGE value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
   </component>
 </project>

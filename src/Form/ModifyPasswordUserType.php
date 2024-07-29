@@ -24,13 +24,23 @@ class ModifyPasswordUserType extends AbstractType
                     'placeholder' => 'Taper votre Mot de passe actuel',
                     'class' => 'my_input'
                 ],
-
+                'constraints' => [
+                    new Length([
+                        'min' => 8,
+                        'max' => 50,
+                    ])
+                ],
                 'mapped' => false,
 
             ])
             ->add('plainPassword', RepeatedType::class, [
                 'type' => PasswordType::class,
-
+                'constraints' => [
+                    new Length([
+                        'min' => 8,
+                        'max' => 50,
+                    ])
+                ],
                 'first_options'  => [
 //                    'label' => 'Mot de passe',
                     'label_attr' => ['class' => 'd-none'],
