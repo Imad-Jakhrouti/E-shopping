@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment=" Restrict access to member area with security configuration&#10;&#10;- Added an 'access_control' configuration in the security firewall&#10;- Restricted access to the '/compte' path to users with the 'ROLE_USER' role&#10;- This ensures that only authenticated users with the 'ROLE_USER' role can access the member area pages">
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment=" Redirect users to member area after login&#10;&#10;- Added a hidden input field with the name '_target_path' and the value set to the path of the member area page ('app_account')&#10;- This ensures that after a successful login, the user is redirected to the member area page ('app_account') instead of the default redirect location&#10;- Improves the user experience by directly taking the user to the member area after authentication">
+      <change afterPath="$PROJECT_DIR$/templates/account/_menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +235,8 @@
       <workItem from="1722077963584" duration="13000" />
       <workItem from="1722105665863" duration="407000" />
       <workItem from="1722106130612" duration="8186000" />
-      <workItem from="1722199531307" duration="2526000" />
+      <workItem from="1722199531307" duration="2833000" />
+      <workItem from="1722276280609" duration="1094000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some">
       <option name="closed" value="true" />
@@ -515,14 +518,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722207483609</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary=" Redirect users to member area after login&#10;&#10;- Added a hidden input field with the name '_target_path' and the value set to the path of the member area page ('app_account')&#10;- This ensures that after a successful login, the user is redirected to the member area page ('app_account') instead of the default redirect location&#10;- Improves the user experience by directly taking the user to the member area after authentication">
+      <option name="closed" value="true" />
+      <created>1722207572744</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1722207572744</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database" />
     <MESSAGE value="Fixed" />
     <MESSAGE value="change the server-version of myslql" />
     <MESSAGE value="change the server-version of mysql" />
@@ -547,6 +557,7 @@
     <MESSAGE value="modify the logout path in the security.yaml to &quot;/deconnexion&quot; as in the logout route" />
     <MESSAGE value="Implement private member area with AccountController&#10;&#10;- Created a new AccountController to handle the private member area functionality" />
     <MESSAGE value=" Restrict access to member area with security configuration&#10;&#10;- Added an 'access_control' configuration in the security firewall&#10;- Restricted access to the '/compte' path to users with the 'ROLE_USER' role&#10;- This ensures that only authenticated users with the 'ROLE_USER' role can access the member area pages" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Restrict access to member area with security configuration&#10;&#10;- Added an 'access_control' configuration in the security firewall&#10;- Restricted access to the '/compte' path to users with the 'ROLE_USER' role&#10;- This ensures that only authenticated users with the 'ROLE_USER' role can access the member area pages" />
+    <MESSAGE value=" Redirect users to member area after login&#10;&#10;- Added a hidden input field with the name '_target_path' and the value set to the path of the member area page ('app_account')&#10;- This ensures that after a successful login, the user is redirected to the member area page ('app_account') instead of the default redirect location&#10;- Improves the user experience by directly taking the user to the member area after authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Redirect users to member area after login&#10;&#10;- Added a hidden input field with the name '_target_path' and the value set to the path of the member area page ('app_account')&#10;- This ensures that after a successful login, the user is redirected to the member area page ('app_account') instead of the default redirect location&#10;- Improves the user experience by directly taking the user to the member area after authentication" />
   </component>
 </project>
