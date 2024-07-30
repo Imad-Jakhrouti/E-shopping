@@ -25,6 +25,7 @@ class RegisterController extends AbstractController
                 'success',
                 'Inscription reussite veuillez vous connecter!'
             );
+            return $this->redirectToRoute('app_login');
         }
 
         return $this->render('register/index.html.twig',[
