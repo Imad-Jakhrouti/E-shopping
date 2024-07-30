@@ -26,6 +26,11 @@ class AccountController extends AbstractController
         ]);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()) {
+            $this->addFlash(
+                'success',
+                'Votre message est bien ete modifier!'
+            );
+
             $entityManager->flush();
         }
         return $this->render('account/modifyPassword.html.twig',[
