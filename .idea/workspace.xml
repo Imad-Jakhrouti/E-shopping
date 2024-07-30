@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="fix">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add some style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/_menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/modifyPassword.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/modifyPassword.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,15 +242,7 @@
       <workItem from="1722199531307" duration="2833000" />
       <workItem from="1722276280609" duration="2885000" />
       <workItem from="1722279248997" duration="4468000" />
-      <workItem from="1722370520260" duration="2750000" />
-    </task>
-    <task id="LOCAL-00003" summary="Created a new migration file &quot;Version20240726184847&quot;">
-      <option name="closed" value="true" />
-      <created>1722019907815</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1722019907815</updated>
+      <workItem from="1722370520260" duration="3983000" />
     </task>
     <task id="LOCAL-00004" summary="create user table&#10;&#10;- Created a new migration file&quot;Version20240726184847&quot;&#10;- Executed the migration to create the 'user' table in the database">
       <option name="closed" value="true" />
@@ -634,14 +628,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722373832093</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add some style">
+      <option name="closed" value="true" />
+      <created>1722374107505</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1722374107505</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="In the LoginController, retrieved the last authentication error and the last username used&#10;- Passed these values to the login/index.html.twig template" />
     <MESSAGE value="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route" />
     <MESSAGE value="Implement login form in template&#10;&#10;- Added the login form HTML markup in the login/index.html.twig template&#10;- Included the necessary input fields for username and password&#10;- Displayed the authentication error message if present&#10;- Used the app_login route for the form action" />
     <MESSAGE value="Style the login form with Bootstrap&#10;&#10;- Applied Bootstrap classes to the login form elements&#10;- Added custom CSS classes 'my_input' and 'my_button' for further styling&#10;- Centered the form container on larger screens using media queries&#10;- Improved the overall visual appearance and responsiveness of the login form" />
@@ -666,6 +667,7 @@
     <MESSAGE value="- Add a success flash message when a user is successfully registered" />
     <MESSAGE value="Implement global display of flash messages&#10;&#10;- Add a Twig template snippet to display flash messages in a centralized location&#10;- The snippet is placed in the base.html.twig file to ensure it is rendered on all pages" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="add some style" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some style" />
   </component>
 </project>
