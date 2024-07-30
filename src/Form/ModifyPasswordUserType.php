@@ -19,7 +19,6 @@ class ModifyPasswordUserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-
             ->add('actualPassword', PasswordType::class, [
 //                'label' => 'Mot de passe actuel',
                 'label_attr' => ['class' => 'd-none'],
@@ -30,7 +29,7 @@ class ModifyPasswordUserType extends AbstractType
                 'constraints' => [
                     new Length([
                         'min' => 8,
-                        'max' => 50,
+                        'max' => 30,
                     ])
                 ],
                 'mapped' => false,
@@ -41,7 +40,7 @@ class ModifyPasswordUserType extends AbstractType
                 'constraints' => [
                     new Length([
                         'min' => 8,
-                        'max' => 50,
+                        'max' => 30,
                     ])
                 ],
                 'first_options'  => [
@@ -94,8 +93,10 @@ class ModifyPasswordUserType extends AbstractType
                     $form->get('actualPassword')->addError(new FormError('Mot de passe incorrect'));
                 }
 
-            })
 
+
+
+            })
 
         ;
     }
@@ -108,3 +109,5 @@ class ModifyPasswordUserType extends AbstractType
         ]);
     }
 }
+
+
