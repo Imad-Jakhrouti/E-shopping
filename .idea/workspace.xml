@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Create the crudController for the entity user &#10;- use the command make:admin:crud and choose the entity you want to manage with the crud controller">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add redirection to the user CRUD controller in the dashboard" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,15 +241,7 @@
       <workItem from="1722276280609" duration="2885000" />
       <workItem from="1722279248997" duration="4468000" />
       <workItem from="1722370520260" duration="6493000" />
-      <workItem from="1722460306359" duration="1873000" />
-    </task>
-    <task id="LOCAL-00011" summary="Fixed">
-      <option name="closed" value="true" />
-      <created>1722021176120</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1722021176120</updated>
+      <workItem from="1722460306359" duration="2197000" />
     </task>
     <task id="LOCAL-00012" summary="change the server-version of myslql">
       <option name="closed" value="true" />
@@ -638,14 +627,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722462737188</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Add redirection to the user CRUD controller in the dashboard">
+      <option name="closed" value="true" />
+      <created>1722463652149</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1722463652149</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" Restrict access to member area with security configuration&#10;&#10;- Added an 'access_control' configuration in the security firewall&#10;- Restricted access to the '/compte' path to users with the 'ROLE_USER' role&#10;- This ensures that only authenticated users with the 'ROLE_USER' role can access the member area pages" />
     <MESSAGE value=" Redirect users to member area after login&#10;&#10;- Added a hidden input field with the name '_target_path' and the value set to the path of the member area page ('app_account')&#10;- This ensures that after a successful login, the user is redirected to the member area page ('app_account') instead of the default redirect location&#10;- Improves the user experience by directly taking the user to the member area after authentication" />
     <MESSAGE value="Add user account navigation menu&#10;&#10;- Created a new Twig template file named &quot;_menu.html.twig&quot; to hold the user account navigation menu&#10;- Added the menu items: &quot;Mes commandes&quot;, &quot;Mes adresses&quot;, &quot;Modifier mot de passe&quot;, and &quot;Me deconnecter&quot;" />
     <MESSAGE value="Add user account link with conditional display&#10;&#10;- Added conditional logic to display the user's first name and account link if the user is logged in&#10;- If the user is not logged in, display a generic user icon linked to the login page&#10;- Leverages Symfony's app.user object to check if a user is authenticated&#10;- Uses Twig's path function to generate the URLs for the account and login pages" />
@@ -670,6 +666,7 @@
     <MESSAGE value="install EasyAdmin" />
     <MESSAGE value="create the dashboard controller the enrty point of backends" />
     <MESSAGE value="Create the crudController for the entity user &#10;- use the command make:admin:crud and choose the entity you want to manage with the crud controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the crudController for the entity user &#10;- use the command make:admin:crud and choose the entity you want to manage with the crud controller" />
+    <MESSAGE value="Add redirection to the user CRUD controller in the dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add redirection to the user CRUD controller in the dashboard" />
   </component>
 </project>
