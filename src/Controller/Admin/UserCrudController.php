@@ -26,6 +26,7 @@ class UserCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Utilisateurs');
     }
 
+    // cette methode permet de cree les champs necissaire pour les formulaire de crud lie a l'entite user
     public function configureFields(string $pageName): iterable
     {
         return [
