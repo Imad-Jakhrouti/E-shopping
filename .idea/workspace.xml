@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="migration created" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Configure Category CRUD labels" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,31 +242,7 @@
       <workItem from="1722279248997" duration="4468000" />
       <workItem from="1722370520260" duration="6493000" />
       <workItem from="1722460306359" duration="3802000" />
-      <workItem from="1722551543430" duration="422000" />
-    </task>
-    <task id="LOCAL-00018" summary="Displayed the register form&#10;- Created the form with the RegisterController using the `createForm(RegisterUserType::class)` method&#10;- Passed the created form to the view as `registerForm`&#10;- Allows displaying the user registration form in the `register/index.html.twig` template">
-      <option name="closed" value="true" />
-      <created>1722106896638</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1722106896638</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Configured Twig for forms &#10;- Added the `form_themes: ['bootstrap_5_layout.html.twig']` configuration to use the Bootstrap 5 form theme">
-      <option name="closed" value="true" />
-      <created>1722107136617</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1722107136617</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Implement registration form fields&#10;- Add email, password, firstname, and lastname fields to the registration form&#10;- Set appropriate form field types (EmailType, PasswordType, TextType)&#10;- Add placeholder attributes for each field to enhance user experience&#10;- Add a submit button with the label &quot;Inscrire&quot; and a success button class">
-      <option name="closed" value="true" />
-      <created>1722110304569</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1722110304569</updated>
+      <workItem from="1722551543430" duration="721000" />
     </task>
     <task id="LOCAL-00021" summary="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database">
       <option name="closed" value="true" />
@@ -636,16 +612,37 @@
       <option name="project" value="LOCAL" />
       <updated>1722551953084</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="create the category crud controller">
+      <option name="closed" value="true" />
+      <created>1722552018890</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1722552018890</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Add link to Category management in admin dashboard menu">
+      <option name="closed" value="true" />
+      <created>1722552141981</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1722552141981</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Configure Category CRUD labels">
+      <option name="closed" value="true" />
+      <created>1722552217386</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1722552217386</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
-    <MESSAGE value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
-    <MESSAGE value="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form" />
     <MESSAGE value="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field" />
     <MESSAGE value="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database" />
     <MESSAGE value="Add a new link to the 'Modify Password' page in the private area menu" />
@@ -668,6 +665,9 @@
     <MESSAGE value="add comments" />
     <MESSAGE value="Create the category entity" />
     <MESSAGE value="migration created" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration created" />
+    <MESSAGE value="create the category crud controller" />
+    <MESSAGE value="Add link to Category management in admin dashboard menu" />
+    <MESSAGE value="Configure Category CRUD labels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure Category CRUD labels" />
   </component>
 </project>
