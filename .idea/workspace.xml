@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option">
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add comments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,15 +241,7 @@
       <workItem from="1722276280609" duration="2885000" />
       <workItem from="1722279248997" duration="4468000" />
       <workItem from="1722370520260" duration="6493000" />
-      <workItem from="1722460306359" duration="2985000" />
-    </task>
-    <task id="LOCAL-00015" summary="feat(database): add first_name and last_name to user table&#10;&#10;- Created a new migration file 'Version20240726190123_add_first_last_name_to_user_table.php'&#10;- The migration file contains the following changes:&#10;  - Added two new columns to the 'user' table:&#10;    - first_name (string, 100 characters)&#10;    - last_name (string, 100 characters)&#10;- Executed the migration to add the new columns to the existing 'user' table in the database&#10;- This update allows storing the first and last name of users, which is necessary for user profiles and personalization">
-      <option name="closed" value="true" />
-      <created>1722022034698</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1722022034698</updated>
+      <workItem from="1722460306359" duration="3802000" />
     </task>
     <task id="LOCAL-00016" summary="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command">
       <option name="closed" value="true" />
@@ -637,14 +627,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722464315263</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add comments">
+      <option name="closed" value="true" />
+      <created>1722464526421</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1722464526421</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" Improve form layout and styling" />
     <MESSAGE value="create modify password route" />
     <MESSAGE value="add the modifyPassword view and pass the modifyPasswordForm to the view" />
     <MESSAGE value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
@@ -669,6 +666,7 @@
     <MESSAGE value="Add a link to the user CRUD in the menu&#10;&#10;This change adds a new menu entry in the dashboard, allowing users to easily access the user management module." />
     <MESSAGE value="Customize the &quot;User&quot; entity labels in the CRUD&#10;&#10;This change allows customizing the labels used for the &quot;User&quot; entity in the CRUD interface.&#10;&#10;Specifically, the `setEntityLabelInSingular()` and `setEntityLabelInPlural()` methods are used to define the singular (&quot;User&quot;) and plural (&quot;Users&quot;) labels." />
     <MESSAGE value="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
 </project>
