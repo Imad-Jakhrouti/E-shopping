@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add comments" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="migration created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,22 +242,7 @@
       <workItem from="1722279248997" duration="4468000" />
       <workItem from="1722370520260" duration="6493000" />
       <workItem from="1722460306359" duration="3802000" />
-    </task>
-    <task id="LOCAL-00016" summary="Created the RegisterController&#10;- Generated via the `php artisan make:controller RegisterController` command">
-      <option name="closed" value="true" />
-      <created>1722105834883</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1722105834883</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Created the RegisterUserType form class&#10;- Generated via the `php artisan make:form RegisterUserType` command&#10;- Represents the form fields and validation rules for user registration&#10;- Centralizes the form logic and can be used in the RegisterController">
-      <option name="closed" value="true" />
-      <created>1722106364079</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1722106364079</updated>
+      <workItem from="1722551543430" duration="422000" />
     </task>
     <task id="LOCAL-00018" summary="Displayed the register form&#10;- Created the form with the RegisterController using the `createForm(RegisterUserType::class)` method&#10;- Passed the created form to the view as `registerForm`&#10;- Allows displaying the user registration form in the `register/index.html.twig` template">
       <option name="closed" value="true" />
@@ -635,15 +620,29 @@
       <option name="project" value="LOCAL" />
       <updated>1722464526421</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Create the category entity">
+      <option name="closed" value="true" />
+      <created>1722551883069</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1722551883070</updated>
+    </task>
+    <task id="LOCAL-00066" summary="migration created">
+      <option name="closed" value="true" />
+      <created>1722551953084</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1722551953084</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create modify password route" />
-    <MESSAGE value="add the modifyPassword view and pass the modifyPasswordForm to the view" />
     <MESSAGE value="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label" />
     <MESSAGE value="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements" />
     <MESSAGE value="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form" />
@@ -667,6 +666,8 @@
     <MESSAGE value="Customize the &quot;User&quot; entity labels in the CRUD&#10;&#10;This change allows customizing the labels used for the &quot;User&quot; entity in the CRUD interface.&#10;&#10;Specifically, the `setEntityLabelInSingular()` and `setEntityLabelInPlural()` methods are used to define the singular (&quot;User&quot;) and plural (&quot;Users&quot;) labels." />
     <MESSAGE value="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option" />
     <MESSAGE value="add comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
+    <MESSAGE value="Create the category entity" />
+    <MESSAGE value="migration created" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration created" />
   </component>
 </project>
