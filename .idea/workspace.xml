@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Configure Category CRUD labels" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Configure Category CRUD fields" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,15 +242,7 @@
       <workItem from="1722279248997" duration="4468000" />
       <workItem from="1722370520260" duration="6493000" />
       <workItem from="1722460306359" duration="3802000" />
-      <workItem from="1722551543430" duration="721000" />
-    </task>
-    <task id="LOCAL-00021" summary="feat: Implement user registration functionality&#10;- Inject Request and EntityManagerInterface into the controller action&#10;- Create a new User entity instance&#10;- Create the RegisterUserType form and bind it to the User entity&#10;- Handle the form submission and process the valid form data&#10;- Use the EntityManager to persist the new User entity and flush the changes to the database">
-      <option name="closed" value="true" />
-      <created>1722110720985</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1722110720985</updated>
+      <workItem from="1722551543430" duration="1089000" />
     </task>
     <task id="LOCAL-00022" summary="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity">
       <option name="closed" value="true" />
@@ -636,14 +628,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722552217386</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Configure Category CRUD fields">
+      <option name="closed" value="true" />
+      <created>1722552314806</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1722552314806</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field" />
     <MESSAGE value="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database" />
     <MESSAGE value="Add a new link to the 'Modify Password' page in the private area menu" />
     <MESSAGE value="Add success flash message on successful password update" />
@@ -668,6 +667,7 @@
     <MESSAGE value="create the category crud controller" />
     <MESSAGE value="Add link to Category management in admin dashboard menu" />
     <MESSAGE value="Configure Category CRUD labels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure Category CRUD labels" />
+    <MESSAGE value="Configure Category CRUD fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure Category CRUD fields" />
   </component>
 </project>
