@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="migration created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add product CRUD link to the dashboard's menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,22 +246,7 @@
       <workItem from="1722553045969" duration="17000" />
       <workItem from="1722596546603" duration="74000" />
       <workItem from="1722596877456" duration="488000" />
-    </task>
-    <task id="LOCAL-00024" summary="Add unique email constraint to user registration form&#10;- Implement the UniqueEntity constraint on the 'email' field of the user registration form&#10;- This constraint ensures that the email address entered by the user is unique in the database&#10;- If a user tries to register with an email address that is already in use, the form will display an error message&#10;- The 'entityClass' option is set to the User entity class, as the form is already bound to this entity&#10;- The 'fields' option specifies that the constraint should be applied to the 'email' field&#10;- The 'message' option sets the custom error message to be displayed if the email is not unique&#10;- This change reinforces the data integrity of the user accounts by preventing duplicate email addresses">
-      <option name="closed" value="true" />
-      <created>1722116101084</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1722116101084</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Create LoginController&#10;&#10;- Generated a new controller using the Symfony make:controller command">
-      <option name="closed" value="true" />
-      <created>1722206035291</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1722206035291</updated>
+      <workItem from="1722611774499" duration="312000" />
     </task>
     <task id="LOCAL-00026" summary="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route">
       <option name="closed" value="true" />
@@ -642,15 +624,29 @@
       <option name="project" value="LOCAL" />
       <updated>1722552787486</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="create product CRUD controller">
+      <option name="closed" value="true" />
+      <created>1722611924641</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1722611924641</updated>
+    </task>
+    <task id="LOCAL-00074" summary="add product CRUD link to the dashboard's menu">
+      <option name="closed" value="true" />
+      <created>1722612085578</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1722612085578</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add a new link to the 'Modify Password' page in the private area menu" />
-    <MESSAGE value="Add success flash message on successful password update" />
     <MESSAGE value="- Add a success flash message when a user is successfully registered" />
     <MESSAGE value="Implement global display of flash messages&#10;&#10;- Add a Twig template snippet to display flash messages in a centralized location&#10;- The snippet is placed in the base.html.twig file to ensure it is rendered on all pages" />
     <MESSAGE value="fix" />
@@ -674,6 +670,8 @@
     <MESSAGE value="Configure Category CRUD fields" />
     <MESSAGE value="create the entity product" />
     <MESSAGE value="migration created" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration created" />
+    <MESSAGE value="create product CRUD controller" />
+    <MESSAGE value="add product CRUD link to the dashboard's menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="add product CRUD link to the dashboard's menu" />
   </component>
 </project>
