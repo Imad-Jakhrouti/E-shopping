@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add product CRUD link to the dashboard's menu" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,15 +249,7 @@
       <workItem from="1722553045969" duration="17000" />
       <workItem from="1722596546603" duration="74000" />
       <workItem from="1722596877456" duration="488000" />
-      <workItem from="1722611774499" duration="312000" />
-    </task>
-    <task id="LOCAL-00026" summary="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route">
-      <option name="closed" value="true" />
-      <created>1722206160230</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1722206160230</updated>
+      <workItem from="1722611774499" duration="1144000" />
     </task>
     <task id="LOCAL-00027" summary="Enable FormLoginAuthenticator with form_login setting&#10;&#10;- Configured the form_login setting in security.yaml&#10;- Set the login_path and check_path to the 'app_login' route">
       <option name="closed" value="true" />
@@ -640,14 +635,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722612085578</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management">
+      <option name="closed" value="true" />
+      <created>1722612340891</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1722612340891</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Add a success flash message when a user is successfully registered" />
     <MESSAGE value="Implement global display of flash messages&#10;&#10;- Add a Twig template snippet to display flash messages in a centralized location&#10;- The snippet is placed in the base.html.twig file to ensure it is rendered on all pages" />
     <MESSAGE value="fix" />
     <MESSAGE value="add some style" />
@@ -672,6 +674,7 @@
     <MESSAGE value="migration created" />
     <MESSAGE value="create product CRUD controller" />
     <MESSAGE value="add product CRUD link to the dashboard's menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="add product CRUD link to the dashboard's menu" />
+    <MESSAGE value="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management" />
+    <option name="LAST_COMMIT_MESSAGE" value="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management" />
   </component>
 </project>
