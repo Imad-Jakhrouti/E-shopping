@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Configure Category CRUD fields" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="migration created">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,23 +245,10 @@
       <workItem from="1722279248997" duration="4468000" />
       <workItem from="1722370520260" duration="6493000" />
       <workItem from="1722460306359" duration="3802000" />
-      <workItem from="1722551543430" duration="1089000" />
-    </task>
-    <task id="LOCAL-00022" summary="Add password confirmation and hashing to user registration&#10;- Implement a repeated password field using the RepeatedType&#10;- Set the first_options to include the label, placeholder, and hash_property_path for the main password field&#10;- Set the second_options to include the label and placeholder for the confirmation password field&#10;- Mark the 'plainPassword' field as unmapped ('mapped' =&gt; false) to prevent it from being directly persisted to the database&#10;- The hashed password will be stored in the 'password' property of the User entity">
-      <option name="closed" value="true" />
-      <created>1722111342746</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1722111342746</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Add length constraints to user registration fields&#10;- Implement length constraints on the 'plainPassword' field using the Length constraint&#10;- Set the minimum length to 8 characters and the maximum length to 50 characters for the password&#10;- Implement length constraints on the 'firstName' and 'lastName' fields using the Length constraint&#10;- Set the minimum length to 2 characters and the maximum length to 50 characters for the first and last name&#10;- This ensures that the user's password and name fields meet the minimum security and validation requirements&#10;- The hashed password will still be stored in the 'password' property of the User entity">
-      <option name="closed" value="true" />
-      <created>1722115254341</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1722115254341</updated>
+      <workItem from="1722551543430" duration="1474000" />
+      <workItem from="1722553045969" duration="17000" />
+      <workItem from="1722596546603" duration="74000" />
+      <workItem from="1722596877456" duration="488000" />
     </task>
     <task id="LOCAL-00024" summary="Add unique email constraint to user registration form&#10;- Implement the UniqueEntity constraint on the 'email' field of the user registration form&#10;- This constraint ensures that the email address entered by the user is unique in the database&#10;- If a user tries to register with an email address that is already in use, the form will display an error message&#10;- The 'entityClass' option is set to the User entity class, as the form is already bound to this entity&#10;- The 'fields' option specifies that the constraint should be applied to the 'email' field&#10;- The 'message' option sets the custom error message to be displayed if the email is not unique&#10;- This change reinforces the data integrity of the user accounts by preventing duplicate email addresses">
       <option name="closed" value="true" />
@@ -636,14 +626,29 @@
       <option name="project" value="LOCAL" />
       <updated>1722552314806</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="create the entity product">
+      <option name="closed" value="true" />
+      <created>1722552762574</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1722552762574</updated>
+    </task>
+    <task id="LOCAL-00072" summary="migration created">
+      <option name="closed" value="true" />
+      <created>1722552787486</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1722552787486</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database" />
     <MESSAGE value="Add a new link to the 'Modify Password' page in the private area menu" />
     <MESSAGE value="Add success flash message on successful password update" />
     <MESSAGE value="- Add a success flash message when a user is successfully registered" />
@@ -663,11 +668,12 @@
     <MESSAGE value="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option" />
     <MESSAGE value="add comments" />
     <MESSAGE value="Create the category entity" />
-    <MESSAGE value="migration created" />
     <MESSAGE value="create the category crud controller" />
     <MESSAGE value="Add link to Category management in admin dashboard menu" />
     <MESSAGE value="Configure Category CRUD labels" />
     <MESSAGE value="Configure Category CRUD fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure Category CRUD fields" />
+    <MESSAGE value="create the entity product" />
+    <MESSAGE value="migration created" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration created" />
   </component>
 </project>
