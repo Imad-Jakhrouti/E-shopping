@@ -1,20 +1,29 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CategoryController!{% endblock %}
+{% block title %}{{ category.name }}{% endblock %}
+{% block icon %}
+    <link rel="icon" type="image/png" size="32" href="https://img.icons8.com/3d-fluency/1500w/shopping-bag.png" data-hid="63b4eb3">
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/imad/Desktop/Projects/symfony/E-shopping/src/Controller/CategoryController.php</code></li>
-        <li>Your template at <code>C:/Users/imad/Desktop/Projects/symfony/E-shopping/templates/category/index.html.twig</code></li>
-    </ul>
-</div>
+    <div class="container py-5">
+        <h1>{{ category.name }}</h1>
+        <h3>Nombre de produit {{ category.products|length }}</h3>
+        <div class="row">
+            {% for product in category.products %}
+                <div class="col-md-4 col-12 col-sm-6 col-lg-3 col h-50 mb-4">
+                    <a href="" class="product_category">
+                        <div class="image">
+                            <img src="/uploads/{{ product.image }}" alt="product.name">
+                        </div>
+                        <div class="product_info">
+                            <strong>{{ product.name }}</strong>
+                            <span class="d-block">{{ product.Price}}</span>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

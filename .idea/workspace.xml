@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="dd CategoryController">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,15 +250,7 @@
       <workItem from="1722553045969" duration="17000" />
       <workItem from="1722596546603" duration="74000" />
       <workItem from="1722596877456" duration="488000" />
-      <workItem from="1722611774499" duration="2752000" />
-    </task>
-    <task id="LOCAL-00032" summary="onfigure logout functionality in the security firewall&#10;&#10;- Updated the security firewall configuration to enable the logout functionality&#10;- Added a 'logout' configuration with the path set to '/logout'&#10;- This allows users to log out of the application by accessing the '/logout' URL">
-      <option name="closed" value="true" />
-      <created>1722207106806</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1722207106806</updated>
+      <workItem from="1722611774499" duration="3413000" />
     </task>
     <task id="LOCAL-00033" summary="modify the logout path in the security.yaml to &quot;/deconnexion&quot; as in the logout route">
       <option name="closed" value="true" />
@@ -642,14 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722614370098</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering">
+      <option name="closed" value="true" />
+      <created>1722617264005</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1722617264005</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create the first webTestCase for application test" />
     <MESSAGE value="Verify successful registration and redirect to login page&#10;&#10;- Create a functional test to simulate the user registration process&#10;- Use the test client to submit the registration form with valid data&#10;- Verify that the user is redirected to the login page after successful registration&#10;- Ensure that the &quot;Inscription reussite veuillez vous connecter!&quot; flash message is displayed on the login page&#10;- This test ensures that the desired user flow and feedback is correctly implemented in the application&#10;- The test sets up the necessary test environment by creating the test database and running migrations&#10;- The test data is isolated within the test environment to avoid interfering with the development or production databases" />
     <MESSAGE value="install EasyAdmin" />
     <MESSAGE value="create the dashboard controller the enrty point of backends" />
@@ -674,6 +675,7 @@
     <MESSAGE value="improve field configuration based on page context&#10;- Modify the configureFields() method in the ProductController&#10;- Introduce a $required variable to conditionally set the required state of the image field&#10;- Set the image field as required for the 'new' page, but not required for the 'edit' page&#10;- Update the configuration of the ImageField to use a customized uploaded file name pattern&#10;- Set the basePath and uploadDir properties for the ImageField to manage the file storage location" />
     <MESSAGE value="create uploads directory" />
     <MESSAGE value="dd CategoryController" />
-    <option name="LAST_COMMIT_MESSAGE" value="dd CategoryController" />
+    <MESSAGE value="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering" />
   </component>
 </project>
