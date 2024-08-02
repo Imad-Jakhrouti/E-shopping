@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="improve field configuration based on page context&#10;- Modify the configureFields() method in the ProductController&#10;- Introduce a $required variable to conditionally set the required state of the image field&#10;- Set the image field as required for the 'new' page, but not required for the 'edit' page&#10;- Update the configuration of the ImageField to use a customized uploaded file name pattern&#10;- Set the basePath and uploadDir properties for the ImageField to manage the file storage location" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="create uploads directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,15 +248,7 @@
       <workItem from="1722553045969" duration="17000" />
       <workItem from="1722596546603" duration="74000" />
       <workItem from="1722596877456" duration="488000" />
-      <workItem from="1722611774499" duration="1485000" />
-    </task>
-    <task id="LOCAL-00030" summary="Style the login form with Bootstrap&#10;&#10;- Applied Bootstrap classes to the login form elements&#10;- Added custom CSS classes 'my_input' and 'my_button' for further styling&#10;- Centered the form container on larger screens using media queries&#10;- Improved the overall visual appearance and responsiveness of the login form">
-      <option name="closed" value="true" />
-      <created>1722206725003</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1722206725003</updated>
+      <workItem from="1722611774499" duration="2536000" />
     </task>
     <task id="LOCAL-00031" summary="Implement logout functionality&#10;&#10;- Added a new route '/deconnexion' with the name 'app_logout' and the HTTP method 'GET'&#10;- Defined a logout action in the controller that throws an exception, as the logout is handled by the security system&#10;- This allows the user to be logged out of the application when accessing the '/deconnexion' URL">
       <option name="closed" value="true" />
@@ -640,14 +634,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722613201143</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="create uploads directory">
+      <option name="closed" value="true" />
+      <created>1722613543905</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1722613543905</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add responsive bootsrap class" />
     <MESSAGE value="Redirect to login page after successful user registration" />
     <MESSAGE value="create the first webTestCase for application test" />
     <MESSAGE value="Verify successful registration and redirect to login page&#10;&#10;- Create a functional test to simulate the user registration process&#10;- Use the test client to submit the registration form with valid data&#10;- Verify that the user is redirected to the login page after successful registration&#10;- Ensure that the &quot;Inscription reussite veuillez vous connecter!&quot; flash message is displayed on the login page&#10;- This test ensures that the desired user flow and feedback is correctly implemented in the application&#10;- The test sets up the necessary test environment by creating the test database and running migrations&#10;- The test data is isolated within the test environment to avoid interfering with the development or production databases" />
@@ -672,6 +673,7 @@
     <MESSAGE value="configure CRUD fields&#10;- Add configureFields() method in ProductController&#10;- Define the fields to be displayed in the CRUD interface for products&#10;- Add fields for name, slug, description, image, price, and tax rate&#10;- Leverage the EasyAdmin field types for enhanced customization and user experience&#10;- Provide helpful hints and descriptions for each field&#10;- Enable associations between products and categories&#10;- Improve the overall structure and clarity of the product management interface" />
     <MESSAGE value=" implement __toString() method&#10;- Add __toString() method in the Category entity&#10;- Return the name property as the string representation of the Category object&#10;- Resolve the &quot;Cannot convert an object of type Category to string&quot; error" />
     <MESSAGE value="improve field configuration based on page context&#10;- Modify the configureFields() method in the ProductController&#10;- Introduce a $required variable to conditionally set the required state of the image field&#10;- Set the image field as required for the 'new' page, but not required for the 'edit' page&#10;- Update the configuration of the ImageField to use a customized uploaded file name pattern&#10;- Set the basePath and uploadDir properties for the ImageField to manage the file storage location" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve field configuration based on page context&#10;- Modify the configureFields() method in the ProductController&#10;- Introduce a $required variable to conditionally set the required state of the image field&#10;- Set the image field as required for the 'new' page, but not required for the 'edit' page&#10;- Update the configuration of the ImageField to use a customized uploaded file name pattern&#10;- Set the basePath and uploadDir properties for the ImageField to manage the file storage location" />
+    <MESSAGE value="create uploads directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="create uploads directory" />
   </component>
 </project>
