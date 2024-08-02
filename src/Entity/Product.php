@@ -112,6 +112,13 @@ class Product
         return $this;
     }
 
+    public function getPriceWt(): ?float
+    {
+        $coeff = 1+ $this->tva/100;
+        return $coeff*$this->price;
+    }
+
+
     public function getCategory(): ?Category
     {
         return $this->category;

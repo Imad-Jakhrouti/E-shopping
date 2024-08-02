@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,15 +250,7 @@
       <workItem from="1722553045969" duration="17000" />
       <workItem from="1722596546603" duration="74000" />
       <workItem from="1722596877456" duration="488000" />
-      <workItem from="1722611774499" duration="3413000" />
-    </task>
-    <task id="LOCAL-00033" summary="modify the logout path in the security.yaml to &quot;/deconnexion&quot; as in the logout route">
-      <option name="closed" value="true" />
-      <created>1722207274043</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1722207274043</updated>
+      <workItem from="1722611774499" duration="4265000" />
     </task>
     <task id="LOCAL-00034" summary="Implement private member area with AccountController&#10;&#10;- Created a new AccountController to handle the private member area functionality">
       <option name="closed" value="true" />
@@ -644,14 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722617264005</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly">
+      <option name="closed" value="true" />
+      <created>1722617974406</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1722617974406</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Verify successful registration and redirect to login page&#10;&#10;- Create a functional test to simulate the user registration process&#10;- Use the test client to submit the registration form with valid data&#10;- Verify that the user is redirected to the login page after successful registration&#10;- Ensure that the &quot;Inscription reussite veuillez vous connecter!&quot; flash message is displayed on the login page&#10;- This test ensures that the desired user flow and feedback is correctly implemented in the application&#10;- The test sets up the necessary test environment by creating the test database and running migrations&#10;- The test data is isolated within the test environment to avoid interfering with the development or production databases" />
     <MESSAGE value="install EasyAdmin" />
     <MESSAGE value="create the dashboard controller the enrty point of backends" />
     <MESSAGE value="Create the crudController for the entity user &#10;- use the command make:admin:crud and choose the entity you want to manage with the crud controller" />
@@ -676,6 +675,7 @@
     <MESSAGE value="create uploads directory" />
     <MESSAGE value="dd CategoryController" />
     <MESSAGE value="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering" />
+    <MESSAGE value="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly" />
   </component>
 </project>
