@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Enhance product image display">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Expose all categories as a global Twig variable" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,31 +248,7 @@
       <workItem from="1722596877456" duration="488000" />
       <workItem from="1722611774499" duration="4925000" />
       <workItem from="1722806983225" duration="1390000" />
-      <workItem from="1722808419299" duration="1663000" />
-    </task>
-    <task id="LOCAL-00040" summary="create modify password route">
-      <option name="closed" value="true" />
-      <created>1722279579652</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1722279579652</updated>
-    </task>
-    <task id="LOCAL-00041" summary="add the modifyPassword view and pass the modifyPasswordForm to the view">
-      <option name="closed" value="true" />
-      <created>1722280379237</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1722280379237</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Add fields for changing password&#10;- Add 'actualPassword' field for current password&#10;- Add 'plainPassword' field with repeated password type for new password&#10;- Add 'Submit' button with 'Mettre à jour' label">
-      <option name="closed" value="true" />
-      <created>1722284453495</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1722284453495</updated>
+      <workItem from="1722808419299" duration="1968000" />
     </task>
     <task id="LOCAL-00043" summary="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements">
       <option name="closed" value="true" />
@@ -644,16 +618,37 @@
       <option name="project" value="LOCAL" />
       <updated>1722808598952</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Add custom Twig filter to format product prices&#10;- Created a new Twig extension that provides a 'formatPrice' filter&#10;- The 'formatPrice' filter takes a numeric price value and formats it with thousands separators and the 'DH' currency suffix">
+      <option name="closed" value="true" />
+      <created>1722810118199</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1722810118199</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Use custom Twig filter to format product prices">
+      <option name="closed" value="true" />
+      <created>1722810302831</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1722810302831</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Expose all categories as a global Twig variable">
+      <option name="closed" value="true" />
+      <created>1722810407953</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1722810407953</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option" />
-    <MESSAGE value="add comments" />
-    <MESSAGE value="Create the category entity" />
     <MESSAGE value="create the category crud controller" />
     <MESSAGE value="Add link to Category management in admin dashboard menu" />
     <MESSAGE value="Configure Category CRUD labels" />
@@ -676,6 +671,9 @@
     <MESSAGE value="Modify product display layout&#10;- Restructured the HTML layout to display the product image and information in a more visually appealing and responsive manner&#10;- Added a breadcrumb navigation to show the product category and name&#10;- Displayed the product name, price, and description&#10;- Added a &quot;Add to cart&quot; button for users to add the product to their shopping cart" />
     <MESSAGE value="Added a link to the product page for each product displayed on the category page" />
     <MESSAGE value="Enhance product image display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance product image display" />
+    <MESSAGE value="Add custom Twig filter to format product prices&#10;- Created a new Twig extension that provides a 'formatPrice' filter&#10;- The 'formatPrice' filter takes a numeric price value and formats it with thousands separators and the 'DH' currency suffix" />
+    <MESSAGE value="Use custom Twig filter to format product prices" />
+    <MESSAGE value="Expose all categories as a global Twig variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expose all categories as a global Twig variable" />
   </component>
 </project>
