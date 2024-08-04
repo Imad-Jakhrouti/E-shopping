@@ -8,11 +8,16 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ProductController extends AbstractController
 {
-    #[Route('/product', name: 'app_product')]
-    public function index(): Response
+    #[Route('/produit/{slug}', name: 'app_product')]
+    public function index($slug, ProductRepository $productRepository ): Response
     {
+        $product = $productRepository->findOneBy(['slug' => $slug]);
+
+        if(!$product){
+            return $this->redirectToRoute('app_home');
+        }
         return $this->render('product/index.html.twig', [
-            'controller_name' => 'ProductController',
+            'product' => $product,
         ]);
     }
 }
