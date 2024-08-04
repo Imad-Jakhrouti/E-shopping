@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="display product price including tax&#10;- Add the getPriceWt() method to the Product model&#10;- This method calculates the price including the applicable tax rate&#10;- Update the Twig template to display the price with tax using the new getPriceWt() method&#10;- Format the price display to show two decimal places and add the currency symbol (DH)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,15 +248,7 @@
       <workItem from="1722553045969" duration="17000" />
       <workItem from="1722596546603" duration="74000" />
       <workItem from="1722596877456" duration="488000" />
-      <workItem from="1722611774499" duration="4265000" />
-    </task>
-    <task id="LOCAL-00034" summary="Implement private member area with AccountController&#10;&#10;- Created a new AccountController to handle the private member area functionality">
-      <option name="closed" value="true" />
-      <created>1722207378052</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1722207378052</updated>
+      <workItem from="1722611774499" duration="4925000" />
     </task>
     <task id="LOCAL-00035" summary=" Restrict access to member area with security configuration&#10;&#10;- Added an 'access_control' configuration in the security firewall&#10;- Restricted access to the '/compte' path to users with the 'ROLE_USER' role&#10;- This ensures that only authenticated users with the 'ROLE_USER' role can access the member area pages">
       <option name="closed" value="true" />
@@ -644,14 +634,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722617974406</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="display product price including tax&#10;- Add the getPriceWt() method to the Product model&#10;- This method calculates the price including the applicable tax rate&#10;- Update the Twig template to display the price with tax using the new getPriceWt() method&#10;- Format the price display to show two decimal places and add the currency symbol (DH)">
+      <option name="closed" value="true" />
+      <created>1722618712391</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1722618712391</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install EasyAdmin" />
     <MESSAGE value="create the dashboard controller the enrty point of backends" />
     <MESSAGE value="Create the crudController for the entity user &#10;- use the command make:admin:crud and choose the entity you want to manage with the crud controller" />
     <MESSAGE value="Add redirection to the user CRUD controller in the dashboard" />
@@ -676,6 +673,7 @@
     <MESSAGE value="dd CategoryController" />
     <MESSAGE value="fetch category based on user request&#10;- Modify the index() method in the CategoryController&#10;- Add a $slug parameter to the method signature to capture the requested category slug&#10;- Use the CategoryRepository to find the category entity based on the provided slug&#10;- Pass the found category entity to the Twig template for rendering" />
     <MESSAGE value="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly" />
-    <option name="LAST_COMMIT_MESSAGE" value="enhance category page display&#10;-Update the Twig template to show the category name and product count&#10;- Implement a responsive grid layout for the product listings&#10;- Apply custom styling to the product items for a consistent visual appearance&#10;- Add hover effects on the product images to enhance the user experience&#10;- Ensure the page layout and styling are visually appealing and user-friendly" />
+    <MESSAGE value="display product price including tax&#10;- Add the getPriceWt() method to the Product model&#10;- This method calculates the price including the applicable tax rate&#10;- Update the Twig template to display the price with tax using the new getPriceWt() method&#10;- Format the price display to show two decimal places and add the currency symbol (DH)" />
+    <option name="LAST_COMMIT_MESSAGE" value="display product price including tax&#10;- Add the getPriceWt() method to the Product model&#10;- This method calculates the price including the applicable tax rate&#10;- Update the Twig template to display the price with tax using the new getPriceWt() method&#10;- Format the price display to show two decimal places and add the currency symbol (DH)" />
   </component>
 </project>
