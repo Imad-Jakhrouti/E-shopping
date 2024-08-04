@@ -19,7 +19,8 @@
                         </div>
                         <div class="product_info">
                             <strong>{{ product.name }}</strong>
-                            <span class="d-block">{{ product.PriceWt|number_format(0, '',' ') }}DH </span>
+                            <span class="d-block">{{ product.PriceWt|formatPrice }}</span>
+                            {#                            <span class="d-block">{{ product.PriceWt|number_format(0, '',' ') }}DH </span>#}
                         </div>
                     </a>
                 </div>
