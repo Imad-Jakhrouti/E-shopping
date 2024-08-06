@@ -2,7 +2,11 @@
 
 namespace App\Class;
 
+use App\Repository\ProductRepository;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 
 class Cart
 {
@@ -44,6 +48,19 @@ class Cart
 
 
         return $this->redirect($request->headers->get('referer'));
+    }
+
+    #[Route('/cart/decrease/{id}', name: 'app_cart_decrease')]
+    public function decrease($id, Cart $cart,Request $request): Response
+    {
+        $cart->decrease($id);
+        $this->addFlash(
+            'success',
+            'Votre produit a ete bien deminiue de votre panier !'
+        );
+
+
+        return $this->redirectToRoute('app_cart');
     }
 
 
