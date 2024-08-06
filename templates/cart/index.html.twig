@@ -23,7 +23,7 @@
                             <small class="d-block">Prix unitaires: {{ myCart['product'].priceWt|formatPrice }}</small>
                         </div>
                         <div class="col-md-3 text-right">
-                            <a href="">-</a> <span class=" badge text-bg-secondary">x{{ myCart['quantity'] }}</span> <a href="">+</a>
+                            <a href="">-</a> <span class=" badge text-bg-secondary">x{{ myCart['quantity'] }}</span> <a href="{{ path('app_cart_increase' , {id : myCart['product'].id }) }}">+</a>
                         </div>
                         <div class="col-md-3 text-right">
                             <strong class="">{{ (myCart['product'].priceWt * myCart['quantity'])|formatPrice }}</strong>

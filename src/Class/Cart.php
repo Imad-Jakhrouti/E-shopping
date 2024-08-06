@@ -32,4 +32,19 @@ class Cart
         $this->requestStack->getSession()->set('cart', $cart);
     }
 
+    #[Route('/cart/increase/{id}', name: 'app_cart_increase')]
+    public function increase($id, ProductRepository $productRepository , Cart $cart,Request $request): Response
+    {
+        $product = $productRepository->findOneBy(['id' => $id]);
+        $cart->addToCart($product);
+        $this->addFlash(
+            'success',
+            'Votre produit a ete bien augmenter !'
+        );
+
+
+        return $this->redirect($request->headers->get('referer'));
+    }
+
+
 }
