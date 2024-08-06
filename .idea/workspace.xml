@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Cart controller created" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add link to cart page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,15 +250,7 @@
       <workItem from="1722806983225" duration="1390000" />
       <workItem from="1722808419299" duration="2234000" />
       <workItem from="1722889924832" duration="409000" />
-      <workItem from="1722980998841" duration="319000" />
-    </task>
-    <task id="LOCAL-00045" summary="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field">
-      <option name="closed" value="true" />
-      <created>1722285383670</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1722285383670</updated>
+      <workItem from="1722980998841" duration="633000" />
     </task>
     <task id="LOCAL-00046" summary="Persist password changes in the database&#10;- Inject the EntityManagerInterface into the modifyPassword() method&#10;- After the form is submitted and validated, flush the changes to the database">
       <option name="closed" value="true" />
@@ -644,15 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722981318021</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="add link to cart page">
+      <option name="closed" value="true" />
+      <created>1722981616145</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1722981616145</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Configure Category CRUD labels" />
-    <MESSAGE value="Configure Category CRUD fields" />
     <MESSAGE value="create the entity product" />
     <MESSAGE value="migration created" />
     <MESSAGE value="create product CRUD controller" />
@@ -675,7 +673,9 @@
     <MESSAGE value="Use custom Twig filter to format product prices" />
     <MESSAGE value="Expose all categories as a global Twig variable" />
     <MESSAGE value="Display all categories in the main navigation menu" />
+    <MESSAGE value="Add the link" />
     <MESSAGE value="Cart controller created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cart controller created" />
+    <MESSAGE value="add link to cart page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add link to cart page" />
   </component>
 </project>
