@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Expose all categories as a global Twig variable" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Display all categories in the main navigation menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,15 +250,8 @@
       <workItem from="1722596877456" duration="488000" />
       <workItem from="1722611774499" duration="4925000" />
       <workItem from="1722806983225" duration="1390000" />
-      <workItem from="1722808419299" duration="1968000" />
-    </task>
-    <task id="LOCAL-00043" summary="Add validation constraints for password fields&#10;- Add 'Length' constraint to 'actualPassword' field with min 8 and max 50 characters&#10;- Add 'Length' constraint to 'plainPassword' field with min 8 and max 50 characters&#10;- Ensure that both new and confirmed passwords meet the length requirements">
-      <option name="closed" value="true" />
-      <created>1722284626291</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1722284626291</updated>
+      <workItem from="1722808419299" duration="2234000" />
+      <workItem from="1722889924832" duration="409000" />
     </task>
     <task id="LOCAL-00044" summary="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form">
       <option name="closed" value="true" />
@@ -642,14 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722810407953</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Display all categories in the main navigation menu">
+      <option name="closed" value="true" />
+      <created>1722810487829</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1722810487829</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create the category crud controller" />
     <MESSAGE value="Add link to Category management in admin dashboard menu" />
     <MESSAGE value="Configure Category CRUD labels" />
     <MESSAGE value="Configure Category CRUD fields" />
@@ -674,6 +676,7 @@
     <MESSAGE value="Add custom Twig filter to format product prices&#10;- Created a new Twig extension that provides a 'formatPrice' filter&#10;- The 'formatPrice' filter takes a numeric price value and formats it with thousands separators and the 'DH' currency suffix" />
     <MESSAGE value="Use custom Twig filter to format product prices" />
     <MESSAGE value="Expose all categories as a global Twig variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expose all categories as a global Twig variable" />
+    <MESSAGE value="Display all categories in the main navigation menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display all categories in the main navigation menu" />
   </component>
 </project>
