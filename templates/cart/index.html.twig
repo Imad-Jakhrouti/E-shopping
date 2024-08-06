@@ -12,7 +12,29 @@
         <div class="row">
             <div class="col-md-8">
                 Listes de produit
-                {{ dump(cart) }}
+                <hr>
+                {% for myCart in cart %}
+                    <div class="row cart_product mb-2">
+                        <div class="col-md-2 cart_product_image">
+                            <img class="img-fluid" src="/uploads/{{ myCart['product'].image }}" alt="{{ myCart['product'].name }}">
+                        </div>
+                        <div class="col-md-4">
+                            <strong>{{ myCart['product'].name }}</strong>
+                            <small class="d-block">Prix unitaires: {{ myCart['product'].priceWt|formatPrice }}</small>
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <a href="">-</a> <span class=" badge text-bg-secondary">x{{ myCart['quantity'] }}</span> <a href="">+</a>
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <strong class="">{{ (myCart['product'].priceWt * myCart['quantity'])|formatPrice }}</strong>
+                            <a href=""  class="btn btn-danger ">Supprimer</a>
+
+                        </div>
+                    </div>
+                {% endfor %}
+                {% if cart %}
+                    <a href="">Vider votre panier</a>
+                {% endif %}
             </div>
         </div>
     </div>
