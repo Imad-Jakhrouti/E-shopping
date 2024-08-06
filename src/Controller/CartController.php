@@ -33,4 +33,32 @@ class CartController extends AbstractController
 
         return $this->redirect($request->headers->get('referer'));
     }
+
+    #[Route('/cart/increase/{id}', name: 'app_cart_increase')]
+    public function increase($id, ProductRepository $productRepository , Cart $cart,Request $request): Response
+    {
+        $product = $productRepository->findOneBy(['id' => $id]);
+        $cart->addToCart($product);
+        $this->addFlash(
+            'success',
+            'Votre produit a ete bien augmenter !'
+        );
+
+
+        return $this->redirect($request->headers->get('referer'));
+    }
+
+    #[Route('/cart/decrease/{id}', name: 'app_cart_decrease')]
+    public function decrease($id, Cart $cart,Request $request): Response
+    {
+        $cart->decrease($id);
+        $this->addFlash(
+            'success',
+            'Votre produit a ete bien deminiue de votre panier !'
+        );
+
+
+        return $this->redirectToRoute('app_cart');
+    }
+
 }

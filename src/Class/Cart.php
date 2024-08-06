@@ -36,31 +36,17 @@ class Cart
         $this->requestStack->getSession()->set('cart', $cart);
     }
 
-    #[Route('/cart/increase/{id}', name: 'app_cart_increase')]
-    public function increase($id, ProductRepository $productRepository , Cart $cart,Request $request): Response
-    {
-        $product = $productRepository->findOneBy(['id' => $id]);
-        $cart->addToCart($product);
-        $this->addFlash(
-            'success',
-            'Votre produit a ete bien augmenter !'
-        );
+    public  function decrease($id){
+        $cart = $this->requestStack->getSession()->get('cart', []);
+        if(isset($cart[$id])){
+            if($cart[$id]['quantity']>1){
+                $cart[$id]['quantity'] =  $cart[$id]['quantity'] - 1;
+            }else{
+                unset($cart[$id]);
+            }
+        }
+        $this->requestStack->getSession()->set('cart', $cart);
 
-
-        return $this->redirect($request->headers->get('referer'));
-    }
-
-    #[Route('/cart/decrease/{id}', name: 'app_cart_decrease')]
-    public function decrease($id, Cart $cart,Request $request): Response
-    {
-        $cart->decrease($id);
-        $this->addFlash(
-            'success',
-            'Votre produit a ete bien deminiue de votre panier !'
-        );
-
-
-        return $this->redirectToRoute('app_cart');
     }
 
 
