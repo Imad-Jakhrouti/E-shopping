@@ -12,10 +12,11 @@ use Symfony\Component\Routing\Attribute\Route;
 class CartController extends AbstractController
 {
     #[Route('/mon-panier', name: 'app_cart')]
-    public function index(): Response
+    public function index(Cart $cart): Response
     {
-        return $this->render('cart/index.html.twig', [
-            'controller_name' => 'CartController',
+
+        return $this->render('cart/index.html.twig',[
+            'cart' => $cart->getCart(),
         ]);
     }
 

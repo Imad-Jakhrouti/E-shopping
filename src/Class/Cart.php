@@ -12,6 +12,10 @@ class Cart
 
     }
 
+    public  function getCart(){
+        return $this->requestStack->getSession()->get('cart');
+    }
+
     public function addToCart($product){
 
         $cart = $this->requestStack->getSession()->get('cart', []);

@@ -19,7 +19,7 @@
                 <h1 class="">{{ product.name }}</h1>
                 <span class="d-block">{{ product.PriceWt|formatPrice }}</span>
                 <div class="">{{ product.description|raw }}</div>
-                <a href="" class="btn btn-warning w-100">Ajouter au panier</a>
+                <a href="{{ path('app_cart_add' , {id : product.id}) }}" class="btn btn-warning w-100">Ajouter au panier</a>
             </div>
         </div>
     </div>
