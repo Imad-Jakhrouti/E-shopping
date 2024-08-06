@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added a new `getCart` method to the `Cart` class to retrieve the user's current cart contents from the session.&#10;and pass the cart to the view for debugging" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add the cart layout with css style" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,15 +250,7 @@
       <workItem from="1722806983225" duration="1390000" />
       <workItem from="1722808419299" duration="2234000" />
       <workItem from="1722889924832" duration="409000" />
-      <workItem from="1722980998841" duration="1891000" />
-    </task>
-    <task id="LOCAL-00049" summary="- Add a success flash message when a user is successfully registered">
-      <option name="closed" value="true" />
-      <created>1722371210199</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1722371210199</updated>
+      <workItem from="1722980998841" duration="2221000" />
     </task>
     <task id="LOCAL-00050" summary="Implement global display of flash messages&#10;&#10;- Add a Twig template snippet to display flash messages in a centralized location&#10;- The snippet is placed in the base.html.twig file to ensure it is rendered on all pages">
       <option name="closed" value="true" />
@@ -644,14 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722982912034</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Add the cart layout with css style">
+      <option name="closed" value="true" />
+      <created>1722983136412</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1722983136412</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add product CRUD link to the dashboard's menu" />
     <MESSAGE value="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management" />
     <MESSAGE value="configure CRUD fields&#10;- Add configureFields() method in ProductController&#10;- Define the fields to be displayed in the CRUD interface for products&#10;- Add fields for name, slug, description, image, price, and tax rate&#10;- Leverage the EasyAdmin field types for enhanced customization and user experience&#10;- Provide helpful hints and descriptions for each field&#10;- Enable associations between products and categories&#10;- Improve the overall structure and clarity of the product management interface" />
     <MESSAGE value=" implement __toString() method&#10;- Add __toString() method in the Category entity&#10;- Return the name property as the string representation of the Category object&#10;- Resolve the &quot;Cannot convert an object of type Category to string&quot; error" />
@@ -676,6 +675,7 @@
     <MESSAGE value="add product to cart&#10;&#10;Implemented the `add` action in the CartController to allow users to add a product to their cart.&#10;&#10;The action takes the product ID as a parameter, uses the ProductRepository to retrieve the corresponding product, and then adds it to the user's cart using the Cart service." />
     <MESSAGE value="implement cart management&#10;&#10;Added a new `Cart` class to manage the user's shopping cart.&#10;&#10;The `Cart` class has the following functionality:&#10;&#10;- Constructor that injects the `RequestStack` service to access the user's session.&#10;- `addToCart` method that adds a product to the user's cart. It checks if the product is already in the cart, and updates the quantity if so, or adds a new entry with a quantity of 1.&#10;- The cart data is stored in the user's session using the `getSession()-&gt;set()` method." />
     <MESSAGE value="Added a new `getCart` method to the `Cart` class to retrieve the user's current cart contents from the session.&#10;and pass the cart to the view for debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new `getCart` method to the `Cart` class to retrieve the user's current cart contents from the session.&#10;and pass the cart to the view for debugging" />
+    <MESSAGE value="Add the cart layout with css style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the cart layout with css style" />
   </component>
 </project>

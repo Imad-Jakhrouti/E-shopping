@@ -25,6 +25,12 @@ class CartController extends AbstractController
     {
         $product = $productRepository->findOneBy(['id' => $id]);
         $cart->addToCart($product);
+        $this->addFlash(
+            'success',
+            'Votre produit a ete bien ajouter au votre panier !'
+        );
+
+
         return $this->redirect($request->headers->get('referer'));
     }
 }
