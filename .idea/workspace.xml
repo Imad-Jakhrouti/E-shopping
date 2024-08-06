@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Display all categories in the main navigation menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Cart controller created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,14 +250,7 @@
       <workItem from="1722806983225" duration="1390000" />
       <workItem from="1722808419299" duration="2234000" />
       <workItem from="1722889924832" duration="409000" />
-    </task>
-    <task id="LOCAL-00044" summary="Implement password change functionality&#10;- Inject the UserPasswordHasherInterface into the modifyPassword() method&#10;- Create the ModifyPasswordUserType form with the current user as the data object&#10;- Pass the hasher service as an option to the form&#10;- Call handleRequest() to process the submitted form">
-      <option name="closed" value="true" />
-      <created>1722285200097</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1722285200097</updated>
+      <workItem from="1722980998841" duration="319000" />
     </task>
     <task id="LOCAL-00045" summary="Add actual password validation&#10;- Set the 'hasher' option as a required parameter in the form configuration&#10;- Add an event listener to the SUBMIT event of the form&#10;- Retrieve the actual password, the user, and the hasher service from the form event&#10;- Compare the actual password with the user's password using the hasher service&#10;- If the actual password is invalid, add a form error to the 'actualPassword' field">
       <option name="closed" value="true" />
@@ -645,14 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722810487829</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Cart controller created">
+      <option name="closed" value="true" />
+      <created>1722981318021</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1722981318021</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add link to Category management in admin dashboard menu" />
     <MESSAGE value="Configure Category CRUD labels" />
     <MESSAGE value="Configure Category CRUD fields" />
     <MESSAGE value="create the entity product" />
@@ -677,6 +675,7 @@
     <MESSAGE value="Use custom Twig filter to format product prices" />
     <MESSAGE value="Expose all categories as a global Twig variable" />
     <MESSAGE value="Display all categories in the main navigation menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display all categories in the main navigation menu" />
+    <MESSAGE value="Cart controller created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cart controller created" />
   </component>
 </project>
