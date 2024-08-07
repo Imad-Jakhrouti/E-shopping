@@ -27,13 +27,13 @@
                         </div>
                         <div class="col-md-3 text-right">
                             <strong class="">{{ (myCart['product'].priceWt * myCart['quantity'])|formatPrice }}</strong>
-                            <a href=""  class="btn btn-danger ">Supprimer</a>
+                            <a href="{{ path('app_cart_remove', {id :  myCart['product'].id }) }}"  class="btn btn-danger ">Supprimer</a>
 
                         </div>
                     </div>
                 {% endfor %}
                 {% if cart %}
-                    <a href="">Vider votre panier</a>
+                    <a href="{{ path('app_cart_removeAll') }}">Vider votre panier</a>
                 {% endif %}
             </div>
         </div>
