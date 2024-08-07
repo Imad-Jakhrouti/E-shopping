@@ -17,6 +17,7 @@ class CartController extends AbstractController
 
         return $this->render('cart/index.html.twig',[
             'cart' => $cart->getCart(),
+            'totalPriceWt' => $cart->getTotalPriceWt(),
         ]);
     }
 
@@ -49,7 +50,7 @@ class CartController extends AbstractController
     }
 
     #[Route('/cart/decrease/{id}', name: 'app_cart_decrease')]
-    public function decrease($id, Cart $cart): Response
+    public function decrease($id, Cart $cart,Request $request): Response
     {
         $cart->decrease($id);
         $this->addFlash(
@@ -68,7 +69,6 @@ class CartController extends AbstractController
         $cart->removeAllFromCart();
         return $this->redirectToRoute('app_home');
     }
-
     #[Route('/cart/remove/{id}', name: 'app_cart_remove')]
     public function remove($id, Cart $cart): Response
     {
@@ -76,5 +76,6 @@ class CartController extends AbstractController
         $cart->removeFromCart($id);
         return $this->redirectToRoute('app_cart');
     }
+
 
 }
