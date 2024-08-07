@@ -49,5 +49,9 @@ class Cart
 
     }
 
+    public function removeAllFromCart(){
+        return $this->requestStack->getSession()->remove('cart');
+    }
+
 
 }

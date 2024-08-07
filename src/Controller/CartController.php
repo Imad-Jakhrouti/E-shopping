@@ -49,7 +49,7 @@ class CartController extends AbstractController
     }
 
     #[Route('/cart/decrease/{id}', name: 'app_cart_decrease')]
-    public function decrease($id, Cart $cart,Request $request): Response
+    public function decrease($id, Cart $cart): Response
     {
         $cart->decrease($id);
         $this->addFlash(
