@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add method to calculate total quantity of items in the cart&#10;&#10;- Implemented `fullQuantity` method to compute the total quantity of items in the cart.&#10;- Retrieves cart items from the session and sums their quantities.&#10;- Returns the total quantity, defaulting to 0 if the cart is empty or not set.&#10;- Added `getTotalPriceWt` method to calculate the total price of items in the cart, including tax.&#10;- Retrieves cart items from the session and sums their prices multiplied by their quantities.&#10;- Returns the total price, defaulting to 0 if the cart is empty or not set.">
-      <change beforePath="$PROJECT_DIR$/src/Class/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cart/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/index.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add cart quantity badge to shopping cart link" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,23 +251,7 @@
       <workItem from="1722808419299" duration="2234000" />
       <workItem from="1722889924832" duration="409000" />
       <workItem from="1722980998841" duration="3273000" />
-      <workItem from="1723058181348" duration="902000" />
-    </task>
-    <task id="LOCAL-00061" summary="Add a link to the user CRUD in the menu&#10;&#10;This change adds a new menu entry in the dashboard, allowing users to easily access the user management module.">
-      <option name="closed" value="true" />
-      <created>1722463765333</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1722463765333</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Customize the &quot;User&quot; entity labels in the CRUD&#10;&#10;This change allows customizing the labels used for the &quot;User&quot; entity in the CRUD interface.&#10;&#10;Specifically, the `setEntityLabelInSingular()` and `setEntityLabelInPlural()` methods are used to define the singular (&quot;User&quot;) and plural (&quot;Users&quot;) labels.">
-      <option name="closed" value="true" />
-      <created>1722463923828</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1722463923828</updated>
+      <workItem from="1723058181348" duration="1254000" />
     </task>
     <task id="LOCAL-00063" summary="Add new fields to the User entity form&#10;- Added a TextField for the 'firstname' field with the label 'Prénom'&#10;- Added a TextField for the 'lastname' field with the label 'Nom' &#10;- Added an EmailField for the 'email' field with the label 'Email' and the 'onlyOnIndex()' option">
       <option name="closed" value="true" />
@@ -649,15 +629,29 @@
       <option name="project" value="LOCAL" />
       <updated>1723058864279</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Add cart summary section with total quantity and price">
+      <option name="closed" value="true" />
+      <created>1723059274281</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1723059274281</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Add cart quantity badge to shopping cart link">
+      <option name="closed" value="true" />
+      <created>1723059446415</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1723059446415</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modify product display layout&#10;- Restructured the HTML layout to display the product image and information in a more visually appealing and responsive manner&#10;- Added a breadcrumb navigation to show the product category and name&#10;- Displayed the product name, price, and description&#10;- Added a &quot;Add to cart&quot; button for users to add the product to their shopping cart" />
-    <MESSAGE value="Added a link to the product page for each product displayed on the category page" />
     <MESSAGE value="Enhance product image display" />
     <MESSAGE value="Add custom Twig filter to format product prices&#10;- Created a new Twig extension that provides a 'formatPrice' filter&#10;- The 'formatPrice' filter takes a numeric price value and formats it with thousands separators and the 'DH' currency suffix" />
     <MESSAGE value="Use custom Twig filter to format product prices" />
@@ -681,6 +675,8 @@
     <MESSAGE value="add the link to remove a specific item from the cart or clean the cart" />
     <MESSAGE value="Implement method to calculate total price with tax&#10;&#10;- Added `getTotalPriceWt` method to calculate the total price of items in the cart, including tax.&#10;- Retrieves cart items from the session and sums their prices multiplied by their quantities.&#10;- Returns the total price, defaulting to 0 if the cart is empty or not set." />
     <MESSAGE value="Add method to calculate total quantity of items in the cart&#10;&#10;- Implemented `fullQuantity` method to compute the total quantity of items in the cart.&#10;- Retrieves cart items from the session and sums their quantities.&#10;- Returns the total quantity, defaulting to 0 if the cart is empty or not set.&#10;- Added `getTotalPriceWt` method to calculate the total price of items in the cart, including tax.&#10;- Retrieves cart items from the session and sums their prices multiplied by their quantities.&#10;- Returns the total price, defaulting to 0 if the cart is empty or not set." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method to calculate total quantity of items in the cart&#10;&#10;- Implemented `fullQuantity` method to compute the total quantity of items in the cart.&#10;- Retrieves cart items from the session and sums their quantities.&#10;- Returns the total quantity, defaulting to 0 if the cart is empty or not set.&#10;- Added `getTotalPriceWt` method to calculate the total price of items in the cart, including tax.&#10;- Retrieves cart items from the session and sums their prices multiplied by their quantities.&#10;- Returns the total price, defaulting to 0 if the cart is empty or not set." />
+    <MESSAGE value="Add cart summary section with total quantity and price" />
+    <MESSAGE value="Add cart quantity badge to shopping cart link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add cart quantity badge to shopping cart link" />
   </component>
 </project>
