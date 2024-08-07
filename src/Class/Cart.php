@@ -53,5 +53,13 @@ class Cart
         return $this->requestStack->getSession()->remove('cart');
     }
 
+    public function removeFromCart($id){
+        $cart = $this->requestStack->getSession()->get('cart', []);
+        if(isset($cart[$id])){
+            unset($cart[$id]);
+        }
+        $this->requestStack->getSession()->set('cart', $cart);
+    }
+
 
 }
