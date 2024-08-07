@@ -75,4 +75,19 @@ class Cart
     }
 
 
+    public function fullQuantity(){
+        $cart = $this->requestStack->getSession()->get('cart', []);
+        $quantity = 0;
+
+        if(!isset($cart)){
+            return $quantity;
+        }
+        foreach($cart as $product){
+            $quantity += $product['quantity'];
+        }
+        return $quantity;
+    }
+
+
+
 }
