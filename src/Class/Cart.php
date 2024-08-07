@@ -61,5 +61,18 @@ class Cart
         $this->requestStack->getSession()->set('cart', $cart);
     }
 
+    public function getTotalPriceWt(){
+        $cart = $this->requestStack->getSession()->get('cart', []);
+        $price = 0;
+        if(!isset($cart)){
+            return $price;
+        }
+
+        foreach($cart as $myCart){
+            $price += $myCart['product']->getPriceWt() * $myCart['quantity'];
+        }
+        return $price;
+    }
+
 
 }
