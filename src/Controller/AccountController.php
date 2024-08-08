@@ -2,7 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Address;
+use App\Form\AddressUserType;
 use App\Form\ModifyPasswordUserType;
+use App\Repository\AddressRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -70,7 +73,7 @@ class AccountController extends AbstractController
             );
             return $this->redirectToRoute('app_account_addresses');
         }
-        return $this->render('account/address/form.html.twig',[
+        return $this->render('account/addressForm.html.twig',[
             'addressForm' => $form->createView(),
         ]);
     }

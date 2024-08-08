@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added address view to the user account section.">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added address form view to the user account section.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/_menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AddressUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddressUserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/account/address.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/address.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -257,31 +257,7 @@
       <workItem from="1722889924832" duration="409000" />
       <workItem from="1722980998841" duration="3273000" />
       <workItem from="1723058181348" duration="1509000" />
-      <workItem from="1723147800495" duration="2397000" />
-    </task>
-    <task id="LOCAL-00070" summary="Configure Category CRUD fields">
-      <option name="closed" value="true" />
-      <created>1722552314806</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1722552314806</updated>
-    </task>
-    <task id="LOCAL-00071" summary="create the entity product">
-      <option name="closed" value="true" />
-      <created>1722552762574</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1722552762574</updated>
-    </task>
-    <task id="LOCAL-00072" summary="migration created">
-      <option name="closed" value="true" />
-      <created>1722552787486</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1722552787486</updated>
+      <workItem from="1723147800495" duration="3067000" />
     </task>
     <task id="LOCAL-00073" summary="create product CRUD controller">
       <option name="closed" value="true" />
@@ -651,15 +627,37 @@
       <option name="project" value="LOCAL" />
       <updated>1723155307074</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Added address form handling with create and update functionality in the user account section.">
+      <option name="closed" value="true" />
+      <created>1723155919046</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1723155919046</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Added address form handling with create and update functionality in the user account section.">
+      <option name="closed" value="true" />
+      <created>1723155987473</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1723155987473</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Added address form view to the user account section.">
+      <option name="closed" value="true" />
+      <created>1723156339253</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1723156339253</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cart controller created" />
-    <MESSAGE value="add link to cart page" />
     <MESSAGE value="add product to cart&#10;&#10;Implemented the `add` action in the CartController to allow users to add a product to their cart.&#10;&#10;The action takes the product ID as a parameter, uses the ProductRepository to retrieve the corresponding product, and then adds it to the user's cart using the Cart service." />
     <MESSAGE value="implement cart management&#10;&#10;Added a new `Cart` class to manage the user's shopping cart.&#10;&#10;The `Cart` class has the following functionality:&#10;&#10;- Constructor that injects the `RequestStack` service to access the user's session.&#10;- `addToCart` method that adds a product to the user's cart. It checks if the product is already in the cart, and updates the quantity if so, or adds a new entry with a quantity of 1.&#10;- The cart data is stored in the user's session using the `getSession()-&gt;set()` method." />
     <MESSAGE value="Added a new `getCart` method to the `Cart` class to retrieve the user's current cart contents from the session.&#10;and pass the cart to the view for debugging" />
@@ -683,6 +681,8 @@
     <MESSAGE value="Created AddressUserType form using Symfony `make:form` command." />
     <MESSAGE value="Added route and controller action for managing user addresses in account section." />
     <MESSAGE value="Added address view to the user account section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added address view to the user account section." />
+    <MESSAGE value="Added address form handling with create and update functionality in the user account section." />
+    <MESSAGE value="Added address form view to the user account section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added address form view to the user account section." />
   </component>
 </project>
