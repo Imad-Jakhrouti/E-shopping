@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Created AddressUserType form using Symfony `make:form` command.">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added address view to the user account section.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/_menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/address.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/address.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,31 +257,7 @@
       <workItem from="1722889924832" duration="409000" />
       <workItem from="1722980998841" duration="3273000" />
       <workItem from="1723058181348" duration="1509000" />
-      <workItem from="1723147800495" duration="1671000" />
-    </task>
-    <task id="LOCAL-00067" summary="create the category crud controller">
-      <option name="closed" value="true" />
-      <created>1722552018890</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1722552018890</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Add link to Category management in admin dashboard menu">
-      <option name="closed" value="true" />
-      <created>1722552141981</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1722552141981</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Configure Category CRUD labels">
-      <option name="closed" value="true" />
-      <created>1722552217386</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1722552217386</updated>
+      <workItem from="1723147800495" duration="2397000" />
     </task>
     <task id="LOCAL-00070" summary="Configure Category CRUD fields">
       <option name="closed" value="true" />
@@ -649,15 +627,37 @@
       <option name="project" value="LOCAL" />
       <updated>1723149049933</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Added route and controller action for managing user addresses in account section.">
+      <option name="closed" value="true" />
+      <created>1723155061591</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1723155061591</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Added address view to the user account section.">
+      <option name="closed" value="true" />
+      <created>1723155271537</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1723155271537</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Added address view to the user account section.">
+      <option name="closed" value="true" />
+      <created>1723155307074</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1723155307074</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Display all categories in the main navigation menu" />
-    <MESSAGE value="Add the link" />
     <MESSAGE value="Cart controller created" />
     <MESSAGE value="add link to cart page" />
     <MESSAGE value="add product to cart&#10;&#10;Implemented the `add` action in the CartController to allow users to add a product to their cart.&#10;&#10;The action takes the product ID as a parameter, uses the ProductRepository to retrieve the corresponding product, and then adds it to the user's cart using the Cart service." />
@@ -681,6 +681,8 @@
     <MESSAGE value="entity Address created" />
     <MESSAGE value="Create and execute the migration for the address entiy" />
     <MESSAGE value="Created AddressUserType form using Symfony `make:form` command." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created AddressUserType form using Symfony `make:form` command." />
+    <MESSAGE value="Added route and controller action for managing user addresses in account section." />
+    <MESSAGE value="Added address view to the user account section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added address view to the user account section." />
   </component>
 </project>

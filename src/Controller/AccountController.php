@@ -12,6 +12,10 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class AccountController extends AbstractController
 {
+    public function __construct(private EntityManagerInterface $entityManager)
+    {
+
+    }
     #[Route('/compte', name: 'app_account')]
     public function index(): Response
     {
@@ -41,6 +45,34 @@ class AccountController extends AbstractController
     public function address(): Response
     {
         return $this->render('account/address.html.twig');
+    }
+
+    #[Route('/compte/adresse/{action}/{id}', name: 'app_account_address_form',requirements: ['action' => 'ajouter|modifier'],defaults: [ 'id' => null])]
+    public function form($id, $action,Request $request ,AddressRepository $addressRepository): Response
+    {
+        if($id and $action == 'modifier'){
+            $address = $addressRepository->findOneBy(['id'=>$id]);
+            if(!$address OR $address->getUser() != $this->getUser()){
+                return $this->redirectToRoute('app_account_addresses');
+            }
+        }else{
+            $address = new Address();
+            $address->setUser($this->getUser());
+        }
+        $form = $this->createForm(AddressUserType::class,$address);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()) {
+            $this->entityManager->persist($address);
+            $this->entityManager->flush();
+            $this->addFlash(
+                'success',
+                'Votre adresse est correctement sauvgarder!'
+            );
+            return $this->redirectToRoute('app_account_addresses');
+        }
+        return $this->render('account/address/form.html.twig',[
+            'addressForm' => $form->createView(),
+        ]);
     }
 
 
