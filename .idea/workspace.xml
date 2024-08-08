@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Create and execute the migration for the address entiy" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Created AddressUserType form using Symfony `make:form` command.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,15 +255,7 @@
       <workItem from="1722889924832" duration="409000" />
       <workItem from="1722980998841" duration="3273000" />
       <workItem from="1723058181348" duration="1509000" />
-      <workItem from="1723147800495" duration="1045000" />
-    </task>
-    <task id="LOCAL-00066" summary="migration created">
-      <option name="closed" value="true" />
-      <created>1722551953084</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1722551953084</updated>
+      <workItem from="1723147800495" duration="1671000" />
     </task>
     <task id="LOCAL-00067" summary="create the category crud controller">
       <option name="closed" value="true" />
@@ -646,14 +641,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723148629379</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Created AddressUserType form using Symfony `make:form` command.">
+      <option name="closed" value="true" />
+      <created>1723149049933</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1723149049933</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Expose all categories as a global Twig variable" />
     <MESSAGE value="Display all categories in the main navigation menu" />
     <MESSAGE value="Add the link" />
     <MESSAGE value="Cart controller created" />
@@ -678,6 +680,7 @@
     <MESSAGE value="add link to decrase quantity in cart" />
     <MESSAGE value="entity Address created" />
     <MESSAGE value="Create and execute the migration for the address entiy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create and execute the migration for the address entiy" />
+    <MESSAGE value="Created AddressUserType form using Symfony `make:form` command." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created AddressUserType form using Symfony `make:form` command." />
   </component>
 </project>
