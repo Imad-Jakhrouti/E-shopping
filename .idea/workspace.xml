@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="add link to decrase quantity in cart">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Create and execute the migration for the address entiy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,23 +252,7 @@
       <workItem from="1722889924832" duration="409000" />
       <workItem from="1722980998841" duration="3273000" />
       <workItem from="1723058181348" duration="1509000" />
-      <workItem from="1723147800495" duration="672000" />
-    </task>
-    <task id="LOCAL-00064" summary="add comments">
-      <option name="closed" value="true" />
-      <created>1722464526421</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1722464526421</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Create the category entity">
-      <option name="closed" value="true" />
-      <created>1722551883069</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1722551883070</updated>
+      <workItem from="1723147800495" duration="1045000" />
     </task>
     <task id="LOCAL-00066" summary="migration created">
       <option name="closed" value="true" />
@@ -649,15 +630,29 @@
       <option name="project" value="LOCAL" />
       <updated>1723059627358</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="entity Address created">
+      <option name="closed" value="true" />
+      <created>1723148508256</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1723148508256</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Create and execute the migration for the address entiy">
+      <option name="closed" value="true" />
+      <created>1723148629379</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1723148629379</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add custom Twig filter to format product prices&#10;- Created a new Twig extension that provides a 'formatPrice' filter&#10;- The 'formatPrice' filter takes a numeric price value and formats it with thousands separators and the 'DH' currency suffix" />
-    <MESSAGE value="Use custom Twig filter to format product prices" />
     <MESSAGE value="Expose all categories as a global Twig variable" />
     <MESSAGE value="Display all categories in the main navigation menu" />
     <MESSAGE value="Add the link" />
@@ -681,6 +676,8 @@
     <MESSAGE value="Add cart summary section with total quantity and price" />
     <MESSAGE value="Add cart quantity badge to shopping cart link" />
     <MESSAGE value="add link to decrase quantity in cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="add link to decrase quantity in cart" />
+    <MESSAGE value="entity Address created" />
+    <MESSAGE value="Create and execute the migration for the address entiy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create and execute the migration for the address entiy" />
   </component>
 </project>
