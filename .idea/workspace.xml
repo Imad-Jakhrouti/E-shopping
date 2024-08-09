@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added address form view to the user account section.">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added address listing and management options (edit/delete) in the user account section.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/AddressUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddressUserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/account/address.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/address.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/addressForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/addressForm.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,23 +256,7 @@
       <workItem from="1722889924832" duration="409000" />
       <workItem from="1722980998841" duration="3273000" />
       <workItem from="1723058181348" duration="1509000" />
-      <workItem from="1723147800495" duration="3067000" />
-    </task>
-    <task id="LOCAL-00073" summary="create product CRUD controller">
-      <option name="closed" value="true" />
-      <created>1722611924641</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1722611924641</updated>
-    </task>
-    <task id="LOCAL-00074" summary="add product CRUD link to the dashboard's menu">
-      <option name="closed" value="true" />
-      <created>1722612085578</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1722612085578</updated>
+      <workItem from="1723147800495" duration="3709000" />
     </task>
     <task id="LOCAL-00075" summary="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management">
       <option name="closed" value="true" />
@@ -651,15 +634,29 @@
       <option name="project" value="LOCAL" />
       <updated>1723156339253</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Updated AddressUserType form with input placeholders and custom CSS classes.">
+      <option name="closed" value="true" />
+      <created>1723156375055</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1723156375055</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Added address listing and management options (edit/delete) in the user account section.">
+      <option name="closed" value="true" />
+      <created>1723156547358</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1723156547358</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add product to cart&#10;&#10;Implemented the `add` action in the CartController to allow users to add a product to their cart.&#10;&#10;The action takes the product ID as a parameter, uses the ProductRepository to retrieve the corresponding product, and then adds it to the user's cart using the Cart service." />
-    <MESSAGE value="implement cart management&#10;&#10;Added a new `Cart` class to manage the user's shopping cart.&#10;&#10;The `Cart` class has the following functionality:&#10;&#10;- Constructor that injects the `RequestStack` service to access the user's session.&#10;- `addToCart` method that adds a product to the user's cart. It checks if the product is already in the cart, and updates the quantity if so, or adds a new entry with a quantity of 1.&#10;- The cart data is stored in the user's session using the `getSession()-&gt;set()` method." />
     <MESSAGE value="Added a new `getCart` method to the `Cart` class to retrieve the user's current cart contents from the session.&#10;and pass the cart to the view for debugging" />
     <MESSAGE value="Add the cart layout with css style" />
     <MESSAGE value="Add the flash message" />
@@ -683,6 +680,8 @@
     <MESSAGE value="Added address view to the user account section." />
     <MESSAGE value="Added address form handling with create and update functionality in the user account section." />
     <MESSAGE value="Added address form view to the user account section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added address form view to the user account section." />
+    <MESSAGE value="Updated AddressUserType form with input placeholders and custom CSS classes." />
+    <MESSAGE value="Added address listing and management options (edit/delete) in the user account section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added address listing and management options (edit/delete) in the user account section." />
   </component>
 </project>
