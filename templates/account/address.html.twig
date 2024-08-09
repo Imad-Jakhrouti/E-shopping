@@ -23,7 +23,7 @@
                                 <span>{{ address.country }}</span> <br>
                                 <span>{{ address.phone }}</span> <br>
                                 <a href="{{ path('app_account_address_form',{ action : 'modifier' , id : address.id}) }}" class="btn btn-secondary">Modifier</a>
-{#                                <a href="{{ path('app_account_address_delete',{ id : address.id}) }}" class="btn btn-secondary">Supprimer</a>#}
+                                <a href="{{ path('app_account_address_delete',{ id : address.id}) }}" class="btn btn-secondary">Supprimer</a>
 
                             </div>
                         {% endfor %}

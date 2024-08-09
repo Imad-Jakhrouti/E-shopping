@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Added address listing and management options (edit/delete) in the user account section.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/address.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/address.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/addressForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/addressForm.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,14 +253,7 @@
       <workItem from="1722980998841" duration="3273000" />
       <workItem from="1723058181348" duration="1509000" />
       <workItem from="1723147800495" duration="3709000" />
-    </task>
-    <task id="LOCAL-00075" summary="customize CRUD labels&#10;- Add configureCrud() method in ProductController&#10;- Set the singular label to 'Produit'&#10;- Set the plural label to 'Produits'&#10;- Improve the user experience by using more appropriate and localized labels&#10;- Enhance the consistency of the admin interface for product management">
-      <option name="closed" value="true" />
-      <created>1722612340891</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1722612340891</updated>
+      <workItem from="1723238107695" duration="377000" />
     </task>
     <task id="LOCAL-00076" summary="configure CRUD fields&#10;- Add configureFields() method in ProductController&#10;- Define the fields to be displayed in the CRUD interface for products&#10;- Add fields for name, slug, description, image, price, and tax rate&#10;- Leverage the EasyAdmin field types for enhanced customization and user experience&#10;- Provide helpful hints and descriptions for each field&#10;- Enable associations between products and categories&#10;- Improve the overall structure and clarity of the product management interface">
       <option name="closed" value="true" />
@@ -650,14 +639,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723156547358</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="fixed">
+      <option name="closed" value="true" />
+      <created>1723238262763</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1723238262763</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a new `getCart` method to the `Cart` class to retrieve the user's current cart contents from the session.&#10;and pass the cart to the view for debugging" />
     <MESSAGE value="Add the cart layout with css style" />
     <MESSAGE value="Add the flash message" />
     <MESSAGE value="implement cart item quantity increase&#10;&#10;Added a new `increase` action in the CartController that allows the user to increase the quantity of a specific product in their cart.&#10;&#10;The action is mapped to the `/cart/increase/{id}` route and named `app_cart_increase`." />
@@ -682,6 +678,7 @@
     <MESSAGE value="Added address form view to the user account section." />
     <MESSAGE value="Updated AddressUserType form with input placeholders and custom CSS classes." />
     <MESSAGE value="Added address listing and management options (edit/delete) in the user account section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added address listing and management options (edit/delete) in the user account section." />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
 </project>
