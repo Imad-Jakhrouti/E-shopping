@@ -1,17 +1,50 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}votre espace prive{% endblock %}
+{% block title %}Compte{% endblock %}
+{% block icon %}
+    <link rel="icon" type="image/png" size="32" href="https://img.icons8.com/3d-fluency/1500w/user-male-circle.png" data-hid="63b4eb3">
+{% endblock %}
 
 {% block body %}
-    <div class="container my-5 account">
-        <h1>Espace prive </h1>
-        <div class="row d-flex justify-content-center">
+
+    <div class="container py-5 account">
+        <div class="row justify-content-center">
+            <h1>Espace prive </h1>
             <div class="col-md-3 col-11">
-                {% include 'account/_menu.html.twig' %}
+                {% include 'account/menu.html.twig' %}
             </div>
             <div class="col-md-9 col-11">
-
-
+               <div class="border-1">
+                   <table class="table table-hover">
+                       <thead>
+                       <tr>
+                           <th scope="col">#</th>
+                           <th scope="col">First</th>
+                           <th scope="col">Last</th>
+                           <th scope="col">Handle</th>
+                       </tr>
+                       </thead>
+                       <tbody>
+                       <tr>
+                           <th scope="row">1</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>@mdo</td>
+                       </tr>
+                       <tr>
+                           <th scope="row">2</th>
+                           <td>Jacob</td>
+                           <td>Thornton</td>
+                           <td>@fat</td>
+                       </tr>
+                       <tr>
+                           <th scope="row">3</th>
+                           <td colspan="2">Larry the Bird</td>
+                           <td>@twitter</td>
+                       </tr>
+                       </tbody>
+                   </table>
+               </div>
             </div>
         </div>
     </div>

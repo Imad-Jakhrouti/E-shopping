@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier compte{% endblock %}
+{% block icon %}
+    <link rel="icon" type="image/png" size="32" href="https://img.icons8.com/3d-fluency/1500w/user-male-circle.png" data-hid="63b4eb3">
+{% endblock %}
+
+{% block body %}
+    <div class="container py-5">
+        <div class="row">
+            <h1>Espace prive </h1>
+            <div class="col-md-3 col-11">
+                {% include 'account/menu.html.twig' %}
+            </div>
+            <div class="col-md-9 col-11 ps-4">
+               <div class="row">
+                   <div class="col-md-8 col-12">
+                       <h5>Modifier mot de passe</h5>
+                       {{ form(modifyPasswordForm) }}
+                   </div>
+               </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}
