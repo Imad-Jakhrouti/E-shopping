@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon panier{% endblock %}
+{% block icon %}
+    <link rel="icon" type="image/png" size="32" href="https://img.icons8.com/3d-fluency/1500w/shopping-bag.png" data-hid="63b4eb3">
+{% endblock %}
+
+{% block body %}
+    <div class="container py-5">
+        <h1>Recapitulatif de ma commande</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <strong>contenu de mon panier</strong> <br/>
+                {% for product in cart %}
+                    <div class="row cart_product mb-2">
+                        <div class="col-md-2 cart_product_image">
+                            <img class="img-fluid" src="/uploads/{{ product['object'].image }}" alt="{{ product['object'].name }}">
+                        </div>
+                        <div class="col-md-4">
+                            <strong>{{ product['object'].name }}</strong>
+                            <small class="d-block">Prix unitaires: {{ product['object'].priceWt|formatPrice }}</small>
+                        </div>
+                        <div class="col-md-3 text-right">
+                            {# <a href="{{ path('app_cart_decrease' , {id : product['object'].id }) }}">-</a> #}  <span class="badge text-bg-secondary">x{{ product['quantity'] }}</span> {# <a href="{{ path('app_cart_increase' , {id : product['object'].id }) }}">+</a> #}
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <strong>{{ (product['object'].priceWt * product['quantity'])|formatPrice }}</strong>
+                            {# <a href="{{ path('app_cart_remove', {id :  product['object'].id }) }}" class="btn btn-danger">Supprimer</a> #}
+                        </div>
+                    </div>
+                {% endfor %}
+                <strong>Votre adresse de livraison</strong> :<br/>
+                <div class="address_choiced">
+                    {{ choices.addresses.firstname }} {{ choices.addresses.lastname }} <br/>
+                    {{ choices.addresses.address}} <br/>
+                    {{ choices.addresses.city}} {{ choices.addresses.country}} <br/>
+                </div>
+                <hr>
+                <strong>Tronsporteur choisis</strong> :<br/>
+                <div class="carrier_choiced">
+                    {{ choices.carriers.name}} <br/>
+                    {{ choices.carriers.description}} <br/>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
