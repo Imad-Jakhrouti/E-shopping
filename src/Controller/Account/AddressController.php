@@ -39,9 +39,11 @@ class AddressController extends AbstractController
         return $this->redirectToRoute('app_account_addresses');
     }
 
-    #[Route('/compte/adresse/{action}/{id}', name: 'app_account_address_form',requirements: ['action' => 'ajouter|modifier'],defaults: [ 'id' => null])]
+    #[Route('/compte/adresse/{action}/{id}', name: 'app_account_address_form',requirements: ['action' => 'ajouter|modifier'],defaults: [ 'id' => null] )]
     public function form($id, $action,Request $request ,AddressRepository $addressRepository): Response
     {
+        $redirectToOrder = $request->query->get('redirectToOrder', false);
+
         if($id and $action == 'modifier'){
             $address = $addressRepository->findOneBy(['id'=>$id]);
             if(!$address OR $address->getUser() != $this->getUser()){
@@ -60,6 +62,9 @@ class AddressController extends AbstractController
                 'success',
                 'Votre adresse est correctement sauvgarder!'
             );
+            if ($redirectToOrder) {
+                return $this->redirectToRoute('app_order');
+            }
             return $this->redirectToRoute('app_account_addresses');
         }
         return $this->render('account/address/form.html.twig',[
