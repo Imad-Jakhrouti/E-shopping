@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Create order form with address and carrier selection">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderController.php" afterDir="false" />
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add order delivery page with address form handling">
       <change beforePath="$PROJECT_DIR$/templates/cart/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/order/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/order/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,15 +416,7 @@
       <workItem from="1723241002708" duration="348000" />
       <workItem from="1724667722719" duration="292000" />
       <workItem from="1724668145862" duration="5013000" />
-      <workItem from="1724966667484" duration="1594000" />
-    </task>
-    <task id="LOCAL-00095" summary="add product to cart&#10;&#10;Implemented the `add` action in the CartController to allow users to add a product to their cart.&#10;&#10;The action takes the product ID as a parameter, uses the ProductRepository to retrieve the corresponding product, and then adds it to the user's cart using the Cart service.">
-      <option name="closed" value="true" />
-      <created>1722981835442</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1722981835442</updated>
+      <workItem from="1724966667484" duration="1902000" />
     </task>
     <task id="LOCAL-00096" summary="implement cart management&#10;&#10;Added a new `Cart` class to manage the user's shopping cart.&#10;&#10;The `Cart` class has the following functionality:&#10;&#10;- Constructor that injects the `RequestStack` service to access the user's session.&#10;- `addToCart` method that adds a product to the user's cart. It checks if the product is already in the cart, and updates the quantity if so, or adds a new entry with a quantity of 1.&#10;- The cart data is stored in the user's session using the `getSession()-&gt;set()` method.">
       <option name="closed" value="true" />
@@ -811,14 +802,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724967593855</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Add order delivery page with address form handling">
+      <option name="closed" value="true" />
+      <created>1724968608283</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1724968608283</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="entity Address created" />
     <MESSAGE value="Create and execute the migration for the address entiy" />
     <MESSAGE value="Created AddressUserType form using Symfony `make:form` command." />
     <MESSAGE value="Added route and controller action for managing user addresses in account section." />
@@ -843,6 +841,7 @@
     <MESSAGE value="Order controller created" />
     <MESSAGE value="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml" />
     <MESSAGE value="Create order form with address and carrier selection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create order form with address and carrier selection" />
+    <MESSAGE value="Add order delivery page with address form handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add order delivery page with address form handling" />
   </component>
 </project>
