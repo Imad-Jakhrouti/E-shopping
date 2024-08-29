@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Create order form with address and carrier selection">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/cart/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -415,15 +417,7 @@
       <workItem from="1723241002708" duration="348000" />
       <workItem from="1724667722719" duration="292000" />
       <workItem from="1724668145862" duration="5013000" />
-      <workItem from="1724966667484" duration="658000" />
-    </task>
-    <task id="LOCAL-00094" summary="add link to cart page">
-      <option name="closed" value="true" />
-      <created>1722981616145</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1722981616145</updated>
+      <workItem from="1724966667484" duration="1594000" />
     </task>
     <task id="LOCAL-00095" summary="add product to cart&#10;&#10;Implemented the `add` action in the CartController to allow users to add a product to their cart.&#10;&#10;The action takes the product ID as a parameter, uses the ProductRepository to retrieve the corresponding product, and then adds it to the user's cart using the Cart service.">
       <option name="closed" value="true" />
@@ -809,14 +803,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724967231459</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Create order form with address and carrier selection">
+      <option name="closed" value="true" />
+      <created>1724967593853</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1724967593855</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add link to decrase quantity in cart" />
     <MESSAGE value="entity Address created" />
     <MESSAGE value="Create and execute the migration for the address entiy" />
     <MESSAGE value="Created AddressUserType form using Symfony `make:form` command." />
@@ -841,6 +842,7 @@
     <MESSAGE value="Generate the migration file for the OrderDetail entity and execute it" />
     <MESSAGE value="Order controller created" />
     <MESSAGE value="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml" />
+    <MESSAGE value="Create order form with address and carrier selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create order form with address and carrier selection" />
   </component>
 </project>
