@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Order controller created">
+    <list default="true" id="6cd01bf7-edad-44b1-84b8-5cf87d14c20e" name="Changes" comment="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml">
       <change beforePath="$PROJECT_DIR$/templates/cart/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -415,15 +415,7 @@
       <workItem from="1723241002708" duration="348000" />
       <workItem from="1724667722719" duration="292000" />
       <workItem from="1724668145862" duration="5013000" />
-      <workItem from="1724966667484" duration="359000" />
-    </task>
-    <task id="LOCAL-00093" summary="Cart controller created">
-      <option name="closed" value="true" />
-      <created>1722981318021</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1722981318021</updated>
+      <workItem from="1724966667484" duration="658000" />
     </task>
     <task id="LOCAL-00094" summary="add link to cart page">
       <option name="closed" value="true" />
@@ -809,14 +801,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724966819280</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml">
+      <option name="closed" value="true" />
+      <created>1724967231459</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1724967231459</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add cart quantity badge to shopping cart link" />
     <MESSAGE value="add link to decrase quantity in cart" />
     <MESSAGE value="entity Address created" />
     <MESSAGE value="Create and execute the migration for the address entiy" />
@@ -841,6 +840,7 @@
     <MESSAGE value="The OrderDetail entity created" />
     <MESSAGE value="Generate the migration file for the OrderDetail entity and execute it" />
     <MESSAGE value="Order controller created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Order controller created" />
+    <MESSAGE value="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add access control rule for '/commande' path to restrict to ROLE_USER in security.yaml" />
   </component>
 </project>
