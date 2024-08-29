@@ -25,7 +25,7 @@ class Cart
         }
         else{
             $cart[$product->getId()]=[
-                'product' => $product,
+                'object' => $product,
                 'quantity' => 1,
             ];
         }
@@ -63,7 +63,7 @@ class Cart
         }
 
         foreach($cart as $myCart){
-            $price += $myCart['product']->getPriceWt() * $myCart['quantity'];
+            $price += $myCart['object']->getPriceWt() * $myCart['quantity'];
         }
         return $price;
     }
